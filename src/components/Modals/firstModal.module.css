@@ -1,0 +1,120 @@
+.background{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    background-color: #1e1e1e5d;
+    backdrop-filter: blur(4px);
+    z-index: 2;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50vw;
+    top: 25vh;
+    height: 50vh;
+    padding: 3vh;
+    background-color: #1e1e1e;
+    border-left: 2px solid #C78118;
+    border-right: 2px solid #C78118;
+    box-shadow: 0px 0px 20px 5px #0e0e0e9d;
+    z-index: 1;
+    animation: apertura 2s linear 0.1s forwards;
+    overflow: hidden;
+}
+.container h1{
+    width: 100%;
+    font-weight: 200;
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: dilay 2s linear 3s forwards;
+}
+.containerTitle{
+    width: 100%;
+    height: 15%;
+    opacity: 0;
+    animation: dilay 2s linear 3s forwards;
+}
+.containerTitle h2{
+    font-weight: 200;
+    font-size: 1.05rem;
+    letter-spacing: 1.5px;
+}
+.containerText{
+    margin-left: 3vh;
+    width: 100%;
+    height: 30%;
+    opacity: 0;
+    animation: dilay 2s linear 3s forwards;
+}
+.containerText p{
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    font-size: 0.9rem;
+}
+.containerButtons{
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-end;
+    width: 100%;
+}
+.button{
+    background: none;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    position: relative;
+    text-decoration: none;
+    color: #f1f1f1;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    padding: 0px;
+    opacity: 0;
+    animation: dilay 2s linear 3s forwards;
+}
+.button:focus{
+    color: #C78118;
+}
+.button:hover {
+    color: #C78118;
+}
+.button:focus:after,
+.button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+.button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #C78118;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+@keyframes apertura{
+    from{
+        left:50vw;
+        width: 2px;
+    }to{
+        left: 25vw;
+        width: 50vw;
+    }
+}
+@keyframes dilay{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

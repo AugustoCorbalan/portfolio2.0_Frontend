@@ -1,0 +1,48 @@
+.container{
+    /* background-color: red; */
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+.subContainer{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 87.5%
+}
+.title{
+    /* background-color: brown; */
+    width: 64.3% ;
+    height: 100%;
+}
+.title h1{
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 4.5rem;
+    letter-spacing: 6px;
+}
+.title h2{
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 2.1rem;
+    letter-spacing: 3px;
+}
+.dynamicText{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 50%;
+    width: 100%;
+}
+.image{
+    background-color: #282828;
+    width: 35.7%;
+    height: 100%;
+}
