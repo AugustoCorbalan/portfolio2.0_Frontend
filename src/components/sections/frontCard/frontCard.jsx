@@ -1,6 +1,6 @@
 import { UseSelector, useSelector } from 'react-redux';
 import styles from './frontCard.module.css';
-import { DynamicText } from './DynamicText/dynamicText';
+import { DynamicText } from './dynamicText/dynamicText';
 import { useEffect, useState } from 'react';
 
 export const FrontCard = ()=>{

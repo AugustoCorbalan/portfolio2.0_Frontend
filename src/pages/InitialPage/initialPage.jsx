@@ -1,10 +1,10 @@
 import { useSelector } from 'react-redux';
 import styles from './initialPage.module.css';
 import { NavBar } from '../../components/navBar/navBar';
-import { FrontCard } from '../../components/frontCard/frontCard';
-import { FootTechnologies } from '../../components/FootTechnologies/footTechnologies';
-import { FirstModal } from '../../components/Modals/firstModal';
-import { AboutComponent } from '../../components/About/aboutComponent';
+import { FrontCard } from '../../components/sections/frontCard/frontCard';
+import { FootTechnologies } from '../../components/footTechnologies/footTechnologies';
+import { FirstModal } from '../../components/modals/firstModal';
+import { AboutComponent } from '../../components/sections/about/aboutComponent';
 export const InitialPage = ()=>{
     const start = useSelector((state)=>state.start)
     return(

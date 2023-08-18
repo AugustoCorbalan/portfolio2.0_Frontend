@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styles from './dynamicText.module.css';
-import soundWriting from '../../../assets/sounds/writing.mp3';
-import soundIntro from '../../../assets/sounds/soundIntro.mp3';
+import soundWriting from '../../../../assets/sounds/writing.mp3';
+import soundIntro from '../../../../assets/sounds/soundIntro.mp3';
 export const DynamicText = ({arrayTexts})=>{
     const [writing, setWriting] = useState(["", "", ""])
     const sound = useSelector((state)=>state.sound);

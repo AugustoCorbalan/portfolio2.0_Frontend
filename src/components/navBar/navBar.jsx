@@ -6,7 +6,7 @@ export const NavBar = ()=>{
             <div className={styles.subContainer1}>
                 <button href="/" className={styles.link}>PRINCIPAL</button>
                 <button href="/" className={styles.link}>SOBRE_MI</button>
-                <button href="/" className={styles.link}>PORTFOLIO</button>
+                <button href="/" className={styles.link}>PROYECTOS</button>
                 <button href="/" className={styles.link}>TECNOLOGÍAS</button>
             </div>
         </div>
