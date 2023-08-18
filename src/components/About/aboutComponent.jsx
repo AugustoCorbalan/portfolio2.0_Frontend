@@ -19,10 +19,17 @@ export const AboutComponent=()=>{
                 {page==1? <FirstText/> : <SecondText/>}
             </div>
             <div className={styles.containerButton}>
-                <button onClick={()=>setPage(page==1? 2 : 1)} className={styles.button}>
-                    {page==1? "¿Cómo llegué a Full Stack Developer?" : "¿Quién soy?" }
-                    <IoMdSend className={styles.icons}/>
-                </button>
+                {
+                    page==1?
+                    <button onClick={()=>setPage(page==1? 2 : 1)} className={styles.button}>
+                        ¿Cómo llegué a Full Stack Developer?
+                        <IoMdSend className={styles.icons}/>
+                    </button> :
+                    <button onClick={()=>setPage(page==1? 2 : 1)} className={styles.button}>
+                        <IoMdSend className={styles.iconsReverse}/>
+                        ¿Quién soy?
+                    </button>
+                }
             </div>
         </div>
     )

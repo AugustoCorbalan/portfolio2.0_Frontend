@@ -21,7 +21,7 @@
     border-right: 2px solid #C78118;
     box-shadow: 0px 0px 20px 5px #0e0e0e9d;
     z-index: 1;
-    animation: apertura 2s linear 0.1s forwards;
+    animation: apertura 1s ease-out 0.1s forwards;
     overflow: hidden;
 }
 .container h1{
@@ -30,13 +30,13 @@
     font-size: 2.1rem;
     letter-spacing: 1px;
     opacity: 0;
-    animation: dilay 2s linear 3s forwards;
+    animation: dilay 1s ease-out 1s forwards;
 }
 .containerTitle{
     width: 100%;
     height: 15%;
     opacity: 0;
-    animation: dilay 2s linear 3s forwards;
+    animation: dilay 1s ease-out 1s forwards;
 }
 .containerTitle h2{
     font-weight: 200;
@@ -48,7 +48,7 @@
     width: 100%;
     height: 30%;
     opacity: 0;
-    animation: dilay 2s linear 3s forwards;
+    animation: dilay 1s ease-out 1s forwards;
 }
 .containerText p{
     font-weight: 200;
@@ -75,7 +75,7 @@
     transition-property: color;
     padding: 0px;
     opacity: 0;
-    animation: dilay 2s linear 3s forwards;
+    animation: dilay 1s ease-out 1s forwards;
 }
 .button:focus{
     color: #C78118;

@@ -81,8 +81,14 @@
   .icons{
     color:#C78118;
     font-size: 1.2rem;
-    /* background-color: red; */
     margin-top: 2px;
     margin-left: 2.4rem;
     transform: scaleX(1.5);
+  }
+  .iconsReverse{
+    color:#C78118;
+    font-size: 1.2rem;
+    margin-top: 2px;
+    margin-right: 2.4rem;
+    transform: scaleX(1.5) rotateZ(180deg);
   }
