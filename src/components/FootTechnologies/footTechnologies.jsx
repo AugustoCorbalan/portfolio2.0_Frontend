@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Carrusel } from './Carrusel/carrusel'
+import { Carrusel } from './components/Carrusel/carrusel'
 import styles from './footTechnologies.module.css'
 
 export const FootTechnologies = ()=>{
