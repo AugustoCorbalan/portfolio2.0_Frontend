@@ -5,6 +5,7 @@ import { FrontCard } from '../../components/sections/frontCard/frontCard';
 import { FootTechnologies } from '../../components/footTechnologies/footTechnologies';
 import { FirstModal } from '../../components/modals/firstModal';
 import { AboutComponent } from '../../components/sections/about/aboutComponent';
+import { Proyects } from '../../components/sections/proyects/proyects';
 export const InitialPage = ()=>{
     const start = useSelector((state)=>state.start)
     return(
@@ -18,9 +19,14 @@ export const InitialPage = ()=>{
                 <FootTechnologies/>
             </section>
             {start?
-                <section className={styles.container2}>
-                    <AboutComponent/>
-                </section>
+                <>
+                    <section className={styles.container2}>
+                        <AboutComponent/>
+                    </section>
+                    <section className={styles.container3}>
+                        <Proyects/>
+                    </section>
+                </>
                 :null
             }
         </>
