@@ -1,8 +1,35 @@
 .principalContainer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    padding-left: 2.5%;
+}
+.containerTitle{ 
+    background-color: #C78118;
+    padding: 0px 5px 0px 15px;
+    width: 100%;
+}
+.containerTitle h2{ 
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 2.1rem;
+    letter-spacing: 3px;
+}
+
+.containerProyects{
+    width: 95vw;
     overflow: hidden;
 }
