@@ -1,4 +1,5 @@
 import styles from './card.module.css';
+import { Carrusel } from './subComponents/carrusel/carrusel.jsx';
 import backgroundRecipes from '../../../../assets/images/proyects/backgroundRecipes.jpg';
 export const Card = ()=>{
     return(
@@ -17,7 +18,7 @@ export const Card = ()=>{
             </div>
             <div className={styles.subContainer2}>
                 <div className={styles.technologies}>
-
+                    <Carrusel/>
                 </div>
             </div>
         </div>
