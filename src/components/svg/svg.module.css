@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    width: 50%;
+    height: 50%;
+}
+
+.icon{
+    width: 200px;
+    height: 200px;
+}
+
+.icon polygon{
+    fill: transparent;
+    stroke-width: 20px;
+    stroke:red;
+    stroke-dasharray: 1240;
+    stroke-dashoffset: 1240;
+}
+
+.icon polygon:hover{
+    animation: animate-hexagon 2s linear forwards;
+}
+
+@keyframes animate-hexagon {
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1240;
+    }
+    80%{
+        stroke-dashoffset: 2480;
+    }
+    100%{
+        stroke-dashoffset: 2484;
+    }
+}

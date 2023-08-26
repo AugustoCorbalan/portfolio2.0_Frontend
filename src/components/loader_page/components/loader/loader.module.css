@@ -1,0 +1,108 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+.hexagon1_color{
+    width: 200px;
+    position: absolute;
+}
+.hexagon1_color polygon{
+    fill: transparent;
+    stroke-width: 12px;
+    stroke-dasharray: 1240;
+    stroke-dashoffset: 1240;
+    animation: style_color 3s linear forwards;
+}
+.hexagon2_color{
+    width: 235px;
+    position: absolute;
+    rotate: 90deg;
+    z-index: -1;
+}
+.hexagon2_color polygon{
+    fill: transparent;
+    stroke-width: 12px;
+    stroke-dasharray: 1240;
+    stroke-dashoffset: 1240;
+    animation: style_color 3s linear forwards;
+}
+.text{
+    display: flex;
+    position: absolute;
+    width: 70px;
+    height: 140px;
+}
+.text h1:nth-child(1){
+    position: absolute;
+    top:0px;
+    left: 0px;
+    align-self: flex-start;
+    font-family: 'Tulpen One', cursive;
+    font-size: 100px;
+    font-weight: 100;
+    color: #64646449;
+    animation: text_color 3s linear forwards;
+}
+.text h1:nth-child(2){
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    align-self: flex-start;
+    font-family: 'Tulpen One', cursive;
+    font-size: 100px;
+    font-weight: 100;
+    color: #64646449;
+    animation: text_color 3s linear forwards;
+}
+@keyframes style_color {
+    0%{
+        stroke-dashoffset: 1240;
+        stroke: #f19e22;
+    }
+    20%{
+        stroke-dashoffset: 1240;
+        stroke: #f19e22;
+    }
+    40%{
+        stroke-dashoffset: 0;
+        stroke: #f19e22;
+    }
+    60%{
+        stroke-dashoffset: 1240;
+        stroke: #f19e22;
+    }
+    80%{
+        stroke-dashoffset: 0;
+        stroke: #f19e22;
+    }
+    90%{
+        stroke-dashoffset: 0;
+        stroke: #64646449;
+    }
+    100%{
+        stroke-dashoffset: 0;
+        stroke: #f19e22;
+    }
+}
+
+@keyframes  text_color {
+    0%{
+        color: #64646449;
+    }
+    70%{
+        color: #64646449;
+    }
+    80%{
+        color: #f19e22;
+    }
+    90%{
+        color: #64646449;
+    }
+    100%{
+        color: #f19e22;
+    }
+}
+
