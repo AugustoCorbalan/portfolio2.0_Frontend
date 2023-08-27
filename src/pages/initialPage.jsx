@@ -1,4 +1,6 @@
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { setStart } from '../Redux/actions';
 import styles from './initialPage.module.css';
 import { NavBar } from '../components/navBar/navBar';
 import { FrontCard } from '../components/sections/frontCard/frontCard';
@@ -8,7 +10,13 @@ import { AboutComponent } from '../components/sections/about/aboutComponent';
 import { Proyects } from '../components/sections/proyects/proyects';
 import { LoaderPage } from '../components/loader_page/loaderPage';
 export const InitialPage = ()=>{
+    const dispatch= useDispatch();
     const start = useSelector((state)=>state.start)
+    useEffect(()=>{
+        setTimeout(()=>{
+            dispatch(setStart(true))
+        }, 5800)
+    },[])
     return(
         <>
             <NavBar/>

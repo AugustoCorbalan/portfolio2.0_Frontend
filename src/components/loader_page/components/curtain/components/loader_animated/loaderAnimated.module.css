@@ -71,19 +71,19 @@
         stroke: #f19e22;
     }
     60%{
-        stroke-dashoffset: 1240;
+        stroke-dashoffset: -1240;
         stroke: #f19e22;
     }
     80%{
-        stroke-dashoffset: 0;
+        stroke-dashoffset: -2480;
         stroke: #f19e22;
     }
     90%{
-        stroke-dashoffset: 0;
+        stroke-dashoffset: -2480;
         stroke: #64646449;
     }
     100%{
-        stroke-dashoffset: 0;
+        stroke-dashoffset: -2480;
         stroke: #f19e22;
     }
 }
