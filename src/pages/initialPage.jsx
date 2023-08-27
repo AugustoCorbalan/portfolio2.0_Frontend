@@ -9,6 +9,7 @@ import { FirstModal } from '../components/modals/firstModal';
 import { AboutComponent } from '../components/sections/about/aboutComponent';
 import { Proyects } from '../components/sections/proyects/proyects';
 import { LoaderPage } from '../components/loader_page/loaderPage';
+import { InitialAnimation } from '../components/initial_animation/initialAnimation';
 export const InitialPage = ()=>{
     const dispatch= useDispatch();
     const start = useSelector((state)=>state.start)
@@ -21,6 +22,7 @@ export const InitialPage = ()=>{
         <>
             <NavBar/>
             {!start ? <LoaderPage/> : null}
+            <InitialAnimation/>
             <section className={styles.container1}>
                 <div className={styles.container}>
                     <FrontCard/>
