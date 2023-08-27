@@ -7,13 +7,12 @@ import { FirstModal } from '../components/modals/firstModal';
 import { AboutComponent } from '../components/sections/about/aboutComponent';
 import { Proyects } from '../components/sections/proyects/proyects';
 import { LoaderPage } from '../components/loader_page/loaderPage';
-import { Curtain } from '../components/loader_page/components/curtain/curtain';
 export const InitialPage = ()=>{
     const start = useSelector((state)=>state.start)
     return(
         <>
             <NavBar/>
-            {!start ? <Curtain/> : null}
+            {!start ? <LoaderPage/> : null}
             <section className={styles.container1}>
                 <div className={styles.container}>
                     <FrontCard/>
