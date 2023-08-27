@@ -4,7 +4,7 @@
     align-items: center;
     width: 50%;
     height: 50%;
-    animation: scale 1s linear forwards 3.48s
+    animation: scale 2.32s linear forwards 3.48s
 }
 .hexagon1_color{
     width: 200px;
@@ -14,6 +14,7 @@
     fill: transparent;
     stroke-width: 12px;
     stroke: #f19e22;
+    stroke: #64646449;
 }
 .hexagon2_color{
     width: 235px;
@@ -25,6 +26,8 @@
     fill: transparent;
     stroke-width: 12px;
     stroke: #f19e22;
+    stroke: #64646449;
+
 }
 .text{
     display: flex;
@@ -41,6 +44,7 @@
     font-size: 100px;
     font-weight: 100;
     color: #f19e22;
+    color: #64646449;
 }
 .text h1:nth-child(2){
     position: absolute;
@@ -51,10 +55,15 @@
     font-size: 100px;
     font-weight: 100;
     color: #f19e22;
+    color: #64646449;
+
 }
 
 @keyframes scale {
     0%{
+        transform: scale(1);
+    }
+    20%{
         transform: scale(1);
     }
     100%{
