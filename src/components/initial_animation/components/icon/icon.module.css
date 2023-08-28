@@ -6,26 +6,27 @@
     height: 0;
     top: 50vh;
     left: 50vw;
+    transform: scale(0.22);
     animation: 
-        scale 2.32s linear forwards 3.48s, 
-        move_freefall 1s ease-in forwards 7s,
-        deform1 0.1s ease forwards 7.95s,
-        move_rebound1Up 0.25s ease-out forwards 8s,
-        move_rebound1Down 0.25s ease-in forwards 8.25s,
-        deform1 0.1s ease forwards 8.45s,
-        move_rebound2Up 0.25s ease-out forwards 8.5s,
-        move_rebound2Down 0.25s ease-in forwards 8.75s,
-        deform2 0.1s ease forwards 8.95s,
-        move_rebound3Up 0.25s ease-out forwards 9s,
-        move_rebound3Down 0.25s ease-in forwards 9.25s,
-        deform2 0.1s ease forwards 9.45s,
-        move_rebound4Up 0.25s ease-out forwards 9.5s,
-        move_rebound4Down 0.25s ease-in forwards 9.75s,
-        deform3 0.1s ease forwards 9.95s,
-        move_rebound5Up 0.15s ease-out forwards 10s,
-        move_rebound5Down 0.15s ease-in forwards 10.15s,
-        move_displacement 2s ease-in-out forwards 10.30s,
-        move_rotate 2s ease-in-out forwards 10.30s
+        /* scale 2.32s linear forwards 3.48s,  */
+        move_freefall 1s ease-in forwards 3.5s,
+        deform1 0.1s ease forwards 4.45s,
+        move_rebound1Up 0.25s ease-out forwards 4.5s,
+        move_rebound1Down 0.25s ease-in forwards 4.75s,
+        deform1 0.1s ease forwards 4.95s,
+        move_rebound2Up 0.25s ease-out forwards 5s,
+        move_rebound2Down 0.25s ease-in forwards 5.25s,
+        deform2 0.1s ease forwards 5.45s,
+        move_rebound3Up 0.25s ease-out forwards 5.5s,
+        move_rebound3Down 0.25s ease-in forwards 5.75s,
+        deform2 0.1s ease forwards 5.95s,
+        move_rebound4Up 0.25s ease-out forwards 6s,
+        move_rebound4Down 0.25s ease-in forwards 6.25s,
+        deform3 0.1s ease forwards 6.45s,
+        move_rebound5Up 0.15s ease-out forwards 6.5s,
+        move_rebound5Down 0.15s ease-in forwards 6.65s,
+        move_displacement 2s ease-in-out forwards 6.8s,
+        move_rotate 2s ease-in-out forwards 6.8s
 }
 .hexagon1_color{
     width: 200px;
@@ -38,12 +39,12 @@
     stroke: #64646449;
     stroke-dasharray: 1240;
         animation: 
-            style_colorVector 0.5s linear forwards 5.8s, 
-            style_colorVector 0.1s linear forwards 7.95s, 
-            style_colorVector 0.1s linear forwards 8.45s, 
-            style_colorVector 0.1s linear forwards 8.95s, 
-            style_colorVector 0.1s linear forwards 9.45s, 
-            style_colorVectorFixed 0.5s linear forwards 9.95s
+            /* style_colorVector 0.5s linear forwards 3.5s,  */
+            style_colorVector 0.1s linear forwards 4.45s, 
+            style_colorVector 0.1s linear forwards 4.95s, 
+            style_colorVector 0.1s linear forwards 5.45s, 
+            style_colorVector 0.1s linear forwards 5.95s, 
+            style_colorVectorFixed 0.5s linear forwards 6.45s
 }
 .hexagon2_color{
     width: 235px;
@@ -58,12 +59,12 @@
     stroke: #64646449;
     stroke-dasharray: 1240;
     animation: 
-        style_colorVector 0.5s linear forwards 5.8s,
-        style_colorVector 0.1s linear forwards 7.95s, 
-        style_colorVector 0.1s linear forwards 8.45s, 
-        style_colorVector 0.1s linear forwards 8.95s, 
-        style_colorVector 0.1s linear forwards 9.45s, 
-        style_colorVectorFixed 0.5s linear forwards 9.95s
+        /* style_colorVector 0.5s linear forwards 3.5s,  */
+        style_colorVector 0.1s linear forwards 4.45s, 
+        style_colorVector 0.1s linear forwards 4.95s, 
+        style_colorVector 0.1s linear forwards 5.45s, 
+        style_colorVector 0.1s linear forwards 5.95s, 
+        style_colorVectorFixed 0.5s linear forwards 6.45s
 }
 .text{
     display: flex;
@@ -82,12 +83,12 @@
     color: #f19e22;
     color: #64646449;
     animation: 
-        style_colorText 0.5s linear forwards 5.8s,
-        style_colorText 0.1s linear forwards 7.95s, 
-        style_colorText 0.1s linear forwards 8.45s, 
-        style_colorText 0.1s linear forwards 8.95s, 
-        style_colorText 0.1s linear forwards 9.45s, 
-        style_colorTextFixed 0.5s linear forwards 9.95s
+        /* style_colorText 0.5s linear forwards 3.5s, */
+        style_colorText 0.1s linear forwards 4.45s, 
+        style_colorText 0.1s linear forwards 4.95s, 
+        style_colorText 0.1s linear forwards 5.45s, 
+        style_colorText 0.1s linear forwards 5.95s, 
+        style_colorTextFixed 0.5s linear forwards 6.45s
 }
 .text h1:nth-child(2){
     position: absolute;
@@ -100,12 +101,12 @@
     color: #f19e22;
     color: #64646449;
     animation: 
-        style_colorText 0.5s linear forwards 5.8s,
-        style_colorText 0.1s linear forwards 7.95s, 
-        style_colorText 0.1s linear forwards 8.45s, 
-        style_colorText 0.1s linear forwards 8.95s, 
-        style_colorText 0.1s linear forwards 9.45s, 
-        style_colorTextFixed 0.5s linear forwards 9.95s
+        /* style_colorText 0.5s linear forwards 3.5s, */
+        style_colorText 0.1s linear forwards 4.45s, 
+        style_colorText 0.1s linear forwards 4.95s, 
+        style_colorText 0.1s linear forwards 5.45s, 
+        style_colorText 0.1s linear forwards 5.95s, 
+        style_colorTextFixed 0.5s linear forwards 6.45s
 }
 
 @keyframes scale {
