@@ -2,9 +2,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 50%;
-    animation: scale 2.32s linear forwards 3.48s
+    width: 0;
+    height: 0;
+    top: 50vh;
+    left: 50vw;
+    animation: 
+        scale 2.32s linear forwards 3.48s, 
+        move_freefall 1s ease-in forwards 7s,
+        deform1 0.1s ease forwards 7.95s,
+        move_rebound1Up 0.25s ease-out forwards 8s,
+        move_rebound1Down 0.25s ease-in forwards 8.25s,
+        deform1 0.1s ease forwards 8.45s,
+        move_rebound2Up 0.25s ease-out forwards 8.5s,
+        move_rebound2Down 0.25s ease-in forwards 8.75s,
+        deform2 0.1s ease forwards 8.95s,
+        move_rebound3Up 0.25s ease-out forwards 9s,
+        move_rebound3Down 0.25s ease-in forwards 9.25s,
+        deform2 0.1s ease forwards 9.45s,
+        move_rebound4Up 0.25s ease-out forwards 9.5s,
+        move_rebound4Down 0.25s ease-in forwards 9.75s,
+        deform3 0.1s ease forwards 9.95s,
+        move_rebound5Up 0.15s ease-out forwards 10s,
+        move_rebound5Down 0.15s ease-in forwards 10.15s,
+        move_displacement 2s ease-in-out forwards 10.30s,
+        move_rotate 2s ease-in-out forwards 10.30s
 }
 .hexagon1_color{
     width: 200px;
@@ -15,6 +36,14 @@
     stroke-width: 12px;
     stroke: #f19e22;
     stroke: #64646449;
+    stroke-dasharray: 1240;
+        animation: 
+            style_colorVector 0.5s linear forwards 5.8s, 
+            style_colorVector 0.1s linear forwards 7.95s, 
+            style_colorVector 0.1s linear forwards 8.45s, 
+            style_colorVector 0.1s linear forwards 8.95s, 
+            style_colorVector 0.1s linear forwards 9.45s, 
+            style_colorVectorFixed 0.5s linear forwards 9.95s
 }
 .hexagon2_color{
     width: 235px;
@@ -27,7 +56,14 @@
     stroke-width: 12px;
     stroke: #f19e22;
     stroke: #64646449;
-
+    stroke-dasharray: 1240;
+    animation: 
+        style_colorVector 0.5s linear forwards 5.8s,
+        style_colorVector 0.1s linear forwards 7.95s, 
+        style_colorVector 0.1s linear forwards 8.45s, 
+        style_colorVector 0.1s linear forwards 8.95s, 
+        style_colorVector 0.1s linear forwards 9.45s, 
+        style_colorVectorFixed 0.5s linear forwards 9.95s
 }
 .text{
     display: flex;
@@ -45,6 +81,13 @@
     font-weight: 100;
     color: #f19e22;
     color: #64646449;
+    animation: 
+        style_colorText 0.5s linear forwards 5.8s,
+        style_colorText 0.1s linear forwards 7.95s, 
+        style_colorText 0.1s linear forwards 8.45s, 
+        style_colorText 0.1s linear forwards 8.95s, 
+        style_colorText 0.1s linear forwards 9.45s, 
+        style_colorTextFixed 0.5s linear forwards 9.95s
 }
 .text h1:nth-child(2){
     position: absolute;
@@ -56,7 +99,13 @@
     font-weight: 100;
     color: #f19e22;
     color: #64646449;
-
+    animation: 
+        style_colorText 0.5s linear forwards 5.8s,
+        style_colorText 0.1s linear forwards 7.95s, 
+        style_colorText 0.1s linear forwards 8.45s, 
+        style_colorText 0.1s linear forwards 8.95s, 
+        style_colorText 0.1s linear forwards 9.45s, 
+        style_colorTextFixed 0.5s linear forwards 9.95s
 }
 
 @keyframes scale {
@@ -65,6 +114,253 @@
     }
     20%{
         transform: scale(1);
+    }
+    100%{
+        transform: scale(0.22);
+    }
+}
+
+@keyframes style_colorVector {
+    0%{
+        stroke: #64646449;
+    }
+    30%{
+        stroke: #f19e22;
+    }
+    100%{
+        stroke: #64646449;
+    }
+}
+@keyframes style_colorVectorFixed {
+    0%{
+        stroke: #64646449;
+    }
+    30%{
+        stroke: #f19e22;
+    }
+    100%{
+        stroke: #f19e22;
+    }
+}
+@keyframes style_colorText {
+    0%{
+        color: #64646449;
+    }
+    30%{
+        color: #f19e22;
+    }
+    100%{
+        color: #64646449;
+    }
+}
+@keyframes style_colorTextFixed {
+    0%{
+        color: #64646449;
+    }
+    30%{
+        color: #f19e22;
+    }
+    100%{
+        color: #f19e22;
+    }
+}
+
+@keyframes move_freefall {
+    0%{
+        left: 50vw;
+        top: 50vh;
+    }
+    100%{
+        left: 50vw;
+        top: 90vh;
+    }
+}
+@keyframes move_rebound1Up {
+    0%{
+        left: 50vw;
+        top: 90vh;
+    }
+    98%{
+        left: 50vw;
+        top: 85vh;
+    }
+    100%{
+        left: 50vw;
+        top: 85vh;
+    } 
+}
+@keyframes move_rebound1Down {
+    0%{
+        left: 50vw;
+        top: 85vh;
+    }
+    98%{
+        left: 50vw;
+        top: 90vh;
+    }
+    100%{
+        left: 50vw;
+        top: 90vh;
+    } 
+}
+@keyframes move_rebound2Up {
+    0%{
+        left: 50vw;
+        top: 90vh;
+    }
+    98%{
+        left: 50vw;
+        top: 86vh;
+    }
+    100%{
+        left: 50vw;
+        top: 86vh;
+    } 
+}
+@keyframes move_rebound2Down {
+    0%{
+        left: 50vw;
+        top: 86vh;
+    }
+    98%{
+        left: 50vw;
+        top: 90vh;
+    }
+    100%{
+        left: 50vw;
+        top: 90vh;
+    } 
+}
+@keyframes move_rebound3Up {
+    0%{
+        left: 50vw;
+        top: 90vh;
+    }
+    98%{
+        left: 50vw;
+        top: 87vh;
+    }
+    100%{
+        left: 50vw;
+        top: 87vh;
+    } 
+}
+@keyframes move_rebound3Down {
+    0%{
+        left: 50vw;
+        top: 87vh;
+    }
+    98%{
+        left: 50vw;
+        top: 90vh;
+    }
+    100%{
+        left: 50vw;
+        top: 90vh;
+    } 
+}
+@keyframes move_rebound4Up {
+    0%{
+        left: 50vw;
+        top: 90vh;
+    }
+    98%{
+        left: 50vw;
+        top: 88vh;
+    }
+    100%{
+        left: 50vw;
+        top: 88vh;
+    } 
+}
+@keyframes move_rebound4Down {
+    0%{
+        left: 50vw;
+        top: 88vh;
+    }
+    98%{
+        left: 50vw;
+        top: 90vh;
+    }
+    100%{
+        left: 50vw;
+        top: 90vh;
+    } 
+}
+@keyframes move_rebound4Up {
+    0%{
+        left: 50vw;
+        top: 90vh;
+    }
+    98%{
+        left: 50vw;
+        top: 89vh;
+    }
+    100%{
+        left: 50vw;
+        top: 89vh;
+    } 
+}
+@keyframes move_rebound4Down {
+    0%{
+        left: 50vw;
+        top: 89vh;
+    }
+    98%{
+        left: 50vw;
+        top: 90vh;
+    }
+    100%{
+        left: 50vw;
+        top: 90vh;
+    } 
+}
+@keyframes move_displacement {
+    0%{
+        left: 50vw;
+        top: 90vh;
+    }
+    100%{
+        left: 2vw;
+        top: 90vh;
+    }
+}
+@keyframes move_rotate {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: -1800deg;
+    }
+}
+@keyframes deform1 {
+    0%{
+        transform: scale(0.22);
+    }
+    50%{
+        transform: scale(0.27, 0.17);
+    }
+    100%{
+        transform: scale(0.22);
+    }
+}
+@keyframes deform2 {
+    0%{
+        transform: scale(0.22);
+    }
+    50%{
+        transform: scale(0.25, 0.19);
+    }
+    100%{
+        transform: scale(0.22);
+    }
+}
+@keyframes deform3 {
+    0%{
+        transform: scale(0.22);
+    }
+    50%{
+        transform: scale(0.23, 0.21);
     }
     100%{
         transform: scale(0.22);
