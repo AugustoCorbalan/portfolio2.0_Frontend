@@ -31,14 +31,14 @@ export const FrontCard = ()=>{
             <div className={styles.subContainer}>
                 <div className={styles.title}>
                     <h1>CORBALAN AUGUSTO N.</h1>
-                    <h2>Full Stack Web Developer</h2>
+                    <h2>Full Stack Web Developer__</h2>
                     <div className={styles.dynamicText}>
                         <DynamicText arrayTexts={arrayTexts}/>
                     </div>
                 </div>
-                <div className={styles.image}>
+                {/* <div className={styles.image}>
 
-                </div>
+                </div> */}
             </div>
         </div>
     )

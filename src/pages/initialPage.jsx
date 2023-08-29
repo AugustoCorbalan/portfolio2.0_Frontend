@@ -20,16 +20,16 @@ export const InitialPage = ()=>{
     },[])
     return(
         <>
-            <NavBar/>
+            {/* <NavBar/> */}
             {!start ? <LoaderPage/> : null}
             <InitialAnimation/>
-            <section className={styles.container1}>
+            {/* <section className={styles.container1}>
                 <div className={styles.container}>
                     <FrontCard/>
                 </div>
                 <FootTechnologies/>
-            </section>
-            {start?
+            </section> */}
+            {/* {start?
                 <>
                     <section className={styles.container2}>
                         <AboutComponent/>
@@ -39,7 +39,7 @@ export const InitialPage = ()=>{
                     </section>
                 </>
                 :null
-            }
+            } */}
         </>
     )
 }

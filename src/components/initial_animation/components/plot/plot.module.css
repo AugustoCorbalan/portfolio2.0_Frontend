@@ -4,30 +4,122 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
-.plot{
-    /* position: absolute; */
-    /* top: 254px;
-    left: -81px; */
-    width: 1000px;
-    /* rotate: 90deg; */
+.plot1{
+    position: absolute;
+    top: -13.9vw;
+    left: -140.6vh;
+    width: 40vw;
 }
-.plot path{
+.plot1_principal path{
+    stroke: #f19e2299;
     stroke: #f19e22;
-    stroke-width: 20px;
+    stroke: #64646449;
+    stroke-width: 5px;
     fill: transparent;
-    stroke-dasharray: 25000;
-    stroke-dashoffset: 25000;
-    animation: plot 5s linear forwards 9.2s;
+    opacity: 0;
+    animation: render 0.1s linear forwards 8.3s, render_principalLines 0.1s linear forwards 10.9s;
+}
+.plot1_secondary path{
+    stroke: #6464642d;
+    stroke-width: 2px;
+    fill: transparent;
+    opacity: 0;
+    animation: render 0.1s linear forwards 8.3s, render_secondaryLines 0.1s linear forwards 10.9s;
+}
+.plot1_line path{
+    stroke: chartreuse;
+    stroke: #f19e22;
+    stroke: #f19e2299;
+    stroke-width: 5px;
+    fill: transparent;
+    stroke-dasharray: 945;
+    stroke-dashoffset: 945;
+    /* animation: render_lines 2s linear forwards 10.9s; */
+}
+/*-------------- Renderizados independientes -------------- */
+.path888{
+    stroke: #1e1e1e;
+    fill: transparent;
+    stroke-width: 10px;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 0;
+    animation: render_path888 0.7s ease-in forwards 9.7s;
+}
+.path878{
+    stroke: #1e1e1e;
+    fill: transparent;
+    stroke-width: 10px;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 0;
+    animation: render_path888 0.5s linear forwards 10.4s;
+}
+.path876{
+    stroke: #1e1e1e;
+    fill: transparent;
+    stroke-width: 10px;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 0;
+    animation: render_path888 0.1s linear forwards 10.4s;
 }
 
 
-@keyframes plot {
+/* -------------------------------------------------------------------------- */
+.plot1_traceLine path{
+    stroke: #f19e22;
+    stroke: #f19e2299;
+    stroke-width: 5px;
+    fill: transparent;
+    stroke-dasharray: 20;
+    stroke-dashoffset: 5;
+    opacity: 0;
+    animation: render 0.1s linear forwards 8.3s;
+    /* animation: render_traceLine 2s linear forwards 9.2s; */
+}
+
+@keyframes render_path888 {
     0%{
-        stroke-dashoffset: 25000;
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: -630;
+    }
+}
+@keyframes render_lines {
+    0%{
+        stroke-dashoffset: -945;
     }
     100%{
         stroke-dashoffset: 0;
+    }
+}
+@keyframes render_traceLine {
+    0%{
+        stroke-dashoffset: 630;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes render_secondaryLines {
+    to{
+        stroke: #f19e2267;
+    }
+}
+
+@keyframes render_principalLines {
+    to{
+        stroke: #f19e22;
+    }
+}
+
+@keyframes render {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
