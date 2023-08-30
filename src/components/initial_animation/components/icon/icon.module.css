@@ -8,7 +8,6 @@
     left: 50vw;
     transform: scale(0.22);
     animation: 
-        /* scale 2.32s linear forwards 3.48s,  */
         move_freefall 1s ease-in forwards 3.5s,
         deform1 0.1s ease forwards 4.45s,
         move_rebound1Up 0.25s ease-out forwards 4.5s,
@@ -42,6 +41,8 @@
 }
 .hexagon1_color{
     width: 200px;
+    /* width: 15vw; */
+    /* height: 34vw; */
     position: absolute;
 }
 .hexagon1_color polygon{
@@ -334,57 +335,57 @@
         top: 90vh;
     }
     100%{
-        left: 2vw;
+        left: 25px;
         top: 90vh;
     }
 }
 @keyframes move_reboundLeft1 {
     0%{
-        left: 2vw;
+        left: 25px;
         top: 90vh;
     }
     100%{
-        left: 2.1vw;
+        left: 26.5px;
         top: 88vh;
     }
 }
 @keyframes move_reboundLeft2 {
     0%{
-        left: 2.1vw;
+        left: 26.5px;
         top: 88vh;
     }
     100%{
-        left: 2.5vw;
+        left: 32px;
         top: 90vh;
     }
 }
 @keyframes move_reboundLeft3 {
     0%{
-        left: 2.5vw;
+        left: 32px;
         top: 90vh;
     }
     100%{
-        left: 3vw;
+        left: 38.5px;
         top: 89vh;
     }
 }
 @keyframes move_reboundLeft4 {
     0%{
-        left: 3vw;
+        left: 38.5px;
         top: 89vh;
     }
     100%{
-        left: 4vw;
+        left: 50.5px;
         top: 90vh;
     }
 }
 @keyframes move_reboundLeft5 {
     0%{
-        left: 4vw;
+        left: 50.5px;
         top: 90vh;
     }
     100%{
-        left: 5.1vw;
+        left: 65.5px;
         top: 90vh;
     }
 }
@@ -466,7 +467,7 @@
 }
 @keyframes move_navbar {
     0%{
-        left: 5.1vw;
+        left: 65.5px;
         top: 90vh;
     }
     30%{

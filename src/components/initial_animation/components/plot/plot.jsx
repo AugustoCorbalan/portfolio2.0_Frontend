@@ -2,6 +2,7 @@ import styles from './plot.module.css';
 export const Plot = ()=>{
     return(
         <div className={styles.container}>
+			<div className={styles.prueba}></div>
 			<div className={styles.container_plot1}>
 				<svg 
 					className={styles.plot1} 
@@ -139,7 +140,7 @@ export const Plot = ()=>{
 							<path id="path882" class="st29" d="M1195.3,1541.2l-536.5,309.8"/>
 							<path id="path884" class="st23" d="M653.1,1854.2l-5.6,3.2v6.4"/>
 							<path id="path886" class="st29" d="M647.6,1876.9l0,619.5"/>
-							<path id="path888" class="st29" d="M1776.7,2489.8l0-619.5"/>
+							<path id="path888" class="st29" d="M1776.7,2640.8l0-759.5"/>
 						</g>
 						<g id="g998" transform="scale(1.04203)">
 							<path id="path1000" class="st30" d="M1219.5,610.4c0,3.6-2.9,6.5-6.5,6.5c-3.6,0-6.5-2.9-6.5-6.5c0-3.6,2.9-6.5,6.5-6.5
@@ -206,7 +207,7 @@ export const Plot = ()=>{
 							C704.2,2294,712.5,2302.3,712.5,2312.5z"/>
 					</g>
 					<g className={styles.independents_lines}>
-						<path className={styles.path888} d="M1776.7,2489.8l0-619.5"/>
+						<path className={styles.path888} d="M1776.7,2640.8l0-759.5"/>
 						<path className={styles.path878} d="M1759.8,1847.6l-536.5-309.7"/>
 						<path className={styles.path876} d="M1776.7,1863.8v-6.4l-5.6-3.2"/>
 					</g>

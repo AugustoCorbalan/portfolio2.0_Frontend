@@ -1,20 +1,29 @@
 .container{
+    position: absolute;
+    /* background-color: rgba(128, 255, 0, 0.307); */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-end;
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
-.plot1{
+/* .prueba{
+    background-color: red;
     position: absolute;
-    top: -13.9vw;
-    left: -140.6vh;
-    width: 40vw;
+    height: 60px;
+    width: 5.1vw;
+    width: 65.5px;
+} */
+.plot1{
+    /* background-color: rgba(127, 255, 212, 0.348); */
+    left: 0px;
+    margin-left: -223px;
+    margin-bottom: 10vh;
+    width: 512px;
 }
 .plot1_principal path{
-    stroke: #f19e2299;
-    stroke: #f19e22;
+    position: relative;
     stroke: #64646449;
     stroke-width: 5px;
     fill: transparent;
@@ -29,8 +38,6 @@
     animation: render 0.1s linear forwards 8.3s, render_secondaryLines 0.1s linear forwards 10.9s;
 }
 .plot1_line path{
-    stroke: chartreuse;
-    stroke: #f19e22;
     stroke: #f19e2299;
     stroke-width: 5px;
     fill: transparent;
@@ -43,7 +50,7 @@
     stroke: #1e1e1e;
     fill: transparent;
     stroke-width: 10px;
-    stroke-dasharray: 630;
+    stroke-dasharray: 760;
     stroke-dashoffset: 0;
     animation: render_path888 0.7s ease-in forwards 9.7s;
 }
@@ -53,7 +60,7 @@
     stroke-width: 10px;
     stroke-dasharray: 630;
     stroke-dashoffset: 0;
-    animation: render_path888 0.5s linear forwards 10.4s;
+    animation: render_path878 0.5s linear forwards 10.4s;
 }
 .path876{
     stroke: #1e1e1e;
@@ -61,7 +68,7 @@
     stroke-width: 10px;
     stroke-dasharray: 630;
     stroke-dashoffset: 0;
-    animation: render_path888 0.1s linear forwards 10.4s;
+    animation: render_path878 0.1s linear forwards 10.4s;
 }
 
 
@@ -75,10 +82,17 @@
     stroke-dashoffset: 5;
     opacity: 0;
     animation: render 0.1s linear forwards 8.3s;
-    /* animation: render_traceLine 2s linear forwards 9.2s; */
 }
 
 @keyframes render_path888 {
+    0%{
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: -760;
+    }
+}
+@keyframes render_path878 {
     0%{
         stroke-dashoffset: 0;
     }
