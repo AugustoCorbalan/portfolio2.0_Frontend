@@ -6,8 +6,8 @@
     top: 93vh;
     width: 100%;
     height: 7vh;
-    /* box-shadow: 0px -10px 20px 0px #171717; */
-    z-index: 1;
+    z-index: 2;
+    box-shadow: 0px -10px 20px 0px #1f1f1fa5;
 }
 .subContainer{
     display: flex;

@@ -37,7 +37,7 @@
         move_reboundLeft4 0.2s ease-in-out forwards 8.9s,
         deform3 0.1s ease forwards 9.35s,
         move_reboundLeft5 0.5s linear forwards 9.1s,
-        move_navbar 3s ease-in-out forwards 11s
+        move_navbar 2s ease-in-out forwards 11s
 }
 .hexagon1_color{
     width: 200px;
@@ -470,7 +470,7 @@
         left: 65.5px;
         top: 90vh;
     }
-    30%{
+    50%{
         left: -5.1vw;
         top: 50vh;
     }

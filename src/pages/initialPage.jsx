@@ -16,30 +16,25 @@ export const InitialPage = ()=>{
     useEffect(()=>{
         setTimeout(()=>{
             dispatch(setStart(true))
-        }, 5800)
+        }, 13000)
     },[])
     return(
         <>
-            {/* <NavBar/> */}
-            {!start ? <LoaderPage/> : null}
+            <LoaderPage/>
+            <div className={styles.container_navBar}>
+                <NavBar/>
+            </div>
             <InitialAnimation/>
-            {/* <section className={styles.container1}>
-                <div className={styles.container}>
-                    <FrontCard/>
-                </div>
+            <div className={styles.container_foottechnologies}>
                 <FootTechnologies/>
-            </section> */}
-            {/* {start?
-                <>
-                    <section className={styles.container2}>
-                        <AboutComponent/>
-                    </section>
-                    <section className={styles.container3}>
-                        <Proyects/>
-                    </section>
-                </>
-                :null
-            } */}
+            </div>
+            <FrontCard/>
+            <section className={styles.container1}>
+                <AboutComponent/>
+            </section>
+            <section className={styles.container2}>
+                <Proyects/>
+            </section>
         </>
     )
 }
