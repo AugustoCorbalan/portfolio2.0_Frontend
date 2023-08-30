@@ -1,18 +1,19 @@
 import styles from './plot.module.css';
+import styles_plot1 from './plot1.module.css';
+import styles_plot2 from './plot2.module.css';
 export const Plot = ()=>{
     return(
         <div className={styles.container}>
-			<div className={styles.prueba}></div>
-			<div className={styles.container_plot1}>
+			<div className={styles_plot1.container_plot1}>
 				<svg 
-					className={styles.plot1} 
+					className={styles_plot1.plot1} 
 					version="1.1" 
 					id="Capa2" 
 					xmlns="http://www.w3.org/2000/svg"  
 					x="0px" y="0px" 
 					viewBox="0 0 3155.7 2748.9"
 				>
-					<g className={styles.plot1_principal}>
+					<g className={styles_plot1.plot1_principal}>
 						<g id="g802" transform="scale(1.38219)">
 							<path id="path804" class="st0" d="M526,105.3l137-79.1"/>
 						</g>
@@ -48,7 +49,7 @@ export const Plot = ()=>{
 								S691,414.6,691,421.4"/>
 						</g>
 					</g>
-					<g className={styles.plot1_line}>
+					<g className={styles_plot1.plot1_line}>
 						<path id="path808" class="st1" d="M262.7,1224.7l195.8,113l195.8-113l0-226.1"/>
 						<g id="g826" transform="scale(1.61551)">
 							<path id="path828" class="st10" d="M1921.3,1401.7L1677,1260.5"/>
@@ -107,7 +108,7 @@ export const Plot = ()=>{
 								S2029.3,1376,2029.3,1382z"/>
 						</g>
 					</g>
-					<g className={styles.plot1_traceLine}>
+					<g className={styles_plot1.plot1_traceLine}>
 						<g id="g782" transform="scale(1.05625)">
 							<path id="path784" class="st19" d="M433.6,575.3l5.3-3"/>
 						</g>
@@ -160,7 +161,7 @@ export const Plot = ()=>{
 						<path id="path1090" class="st1" d="M693.9,1774.4c0,13.1-10.6,23.7-23.7,23.7s-23.7-10.6-23.7-23.7c0-13.1,10.6-23.7,23.7-23.7
 							C683.3,1750.7,693.9,1761.3,693.9,1774.4L693.9,1774.4z"/>
 					</g>
-					<g className={styles.plot1_secondary}>
+					<g className={styles_plot1.plot1_secondary}>
 						<path id="path842" class="st1" d="M505.8,1714.7l-126.7-73.1l-126.7,73.1l0,146.3l126.7,73.1l126.7-73.2L505.8,1714.7z"/>
 						<path id="path848" class="st1" d="M694,2312.5l220.1-127.1l0-254.2l-220.1-127.1l-220.1,127.1"/>
 						<path id="path872" class="st1" d="M1634.8,1254.3L1407,1385.8l0,263.1l227.8,131.5l227.8-131.5"/>
@@ -207,14 +208,165 @@ export const Plot = ()=>{
 							C704.2,2294,712.5,2302.3,712.5,2312.5z"/>
 					</g>
 					<g className={styles.independents_lines}>
-						<path className={styles.path888} d="M1776.7,2640.8l0-759.5"/>
-						<path className={styles.path878} d="M1759.8,1847.6l-536.5-309.7"/>
-						<path className={styles.path876} d="M1776.7,1863.8v-6.4l-5.6-3.2"/>
+						<path className={styles_plot1.path888} d="M1776.7,2640.8l0-759.5"/>
+						<path className={styles_plot1.path878} d="M1759.8,1847.6l-536.5-309.7"/>
+						<path className={styles_plot1.path876} d="M1776.7,1863.8v-6.4l-5.6-3.2"/>
 					</g>
 				</svg>
 			</div>
-			<div className={styles.container_plot2}>
-
+			<div className={styles_plot2.container_plot2}>
+			<svg
+				className={styles_plot2.plot2} 
+				version="1.1" id="Capa_1" x="0px" y="0px"
+				viewBox="0 0 1871.4 1668">
+				<g className={styles_plot2.plot2_secondary}>
+					<g id="g722" transform="scale(2.58979)">
+						<path id="path724" class="st0" d="M675.1,30.1l-208,122.5v99.5l86.2,49.7l169.4-99"/>
+					</g>
+					<g id="g774" transform="scale(1.98477)">
+						<path id="path776" class="st1" d="M242.8,278.5l84.3,48.7l84.3-48.7v-97.4l-84.3-48.7l-84.3,48.7L242.8,278.5L242.8,278.5z"/>
+					</g>
+					<g id="g778" transform="scale(2.19479)">
+						<path id="path780" class="st2" d="M267.6,387.4l135.6,78.3l135.6-78.3V230.8l-135.6-78.3l-135.6,78.3L267.6,387.4z"/>
+					</g>
+					<g id="g770" transform="scale(1.96113)">
+						<path id="path772" class="st3" d="M186.8,0.2v120.4l104.3,60.2l104.3-60.2V0.2"/>
+					</g>
+				</g>
+				<g className={styles_plot2.plot2_traceLine}>
+					<g id="g702" transform="scale(2.11156)">
+						<path id="path704" class="st4" d="M491.4,414.8l-2.6,1.5"/>
+					</g>
+					<g id="g710" transform="scale(1.96172)">
+						<path id="path712" class="st5" d="M395.8,523.4L393,525v3.3"/>
+					</g>
+					<g id="g718" transform="scale(1.95854)">
+						<path id="path720" class="st6" d="M393.6,679.9v3.3"/>
+					</g>
+					<g id="g734" transform="scale(1.5508)">
+						<path id="path736" class="st7" d="M35.1,264.5v4.1l3.6,2.1"/>
+					</g>
+					<g id="g742" transform="scale(1.71258)">
+						<path id="path744" class="st8" d="M193.2,336.4l3.2,1.9l3.3-1.9"/>
+					</g>
+					<g id="g750" transform="scale(1.87117)">
+						<path id="path752" class="st9" d="M327.6,224.3l3-1.7v-3.4"/>
+					</g>
+					<g id="g738" transform="scale(1.7031)">
+						<path id="path740" class="st10" d="M41.6,250.1l149.5,86.3"/>
+					</g>
+					<g id="g746" transform="scale(1.86487)">
+						<path id="path748" class="st11" d="M189.2,305.6l136.6-78.9"/>
+					</g>
+					<g id="g754" transform="scale(1.87117)">
+						<path id="path756" class="st12" d="M330.5,212.5V55.3"/>
+					</g>
+					<g id="g758" transform="scale(1.57041)">
+						<path id="path760" class="st13" d="M34.6,69.9v187.3"/>
+					</g>
+					<g id="g714" transform="scale(1.95854)">
+						<path id="path716" class="st14" d="M393.6,535.7v140.9"/>
+					</g>
+					<g id="g706" transform="scale(2.102)">
+						<path id="path708" class="st15" d="M485.7,421.3L372,486.9"/>
+					</g>
+					<g id="g912" transform="scale(1.96969)">
+						<path id="path914" class="st16" d="M381.5,676.8c0-5.5,4.4-9.9,9.9-9.9s9.9,4.4,9.9,9.9s-4.4,9.9-9.9,9.9S381.5,682.3,381.5,676.8
+							"/>
+					</g>
+					<g id="g924" transform="scale(2.1169)">
+						<path id="path926" class="st17" d="M485.8,413.8c0-2.4,2-4.4,4.4-4.4s4.4,2,4.4,4.4s-2,4.4-4.4,4.4S485.8,416.2,485.8,413.8"/>
+					</g>
+				</g>
+				<g className={styles_plot2.plot2_lines}>
+					<g id="g726" transform="scale(2.31577)">
+						<path id="path728" class="st18" d="M601.8,216.9v-97.6l-84.5-48.8l-84.5,48.8v97.6"/>
+					</g>
+					<g id="g730" transform="scale(1.79088)">
+						<path id="path732" class="st19" d="M267.2,590.9V448.1l-123.7-71.4"/>
+					</g>
+					<g id="g762" transform="scale(1.74148)">
+						<path id="path764" class="st20" d="M225.3,371.8V230.2l-122.6-70.8"/>
+					</g>
+					<g id="g766" transform="scale(2.39337)">
+						<path id="path768" class="st21" d="M638.8,546.5l-164.9-95.3"/>
+					</g>
+					<g id="g900" transform="scale(2.14301)">
+						<path id="path902" class="st22" d="M294.3,756l215.5-121.3v-45.5"/>
+					</g>
+					<g id="g916" transform="scale(1.67188)">
+						<path id="path918" class="st23" d="M145.3,403.5c0-4.6,3.7-8.4,8.4-8.4c4.6,0,8.4,3.8,8.4,8.4s-3.7,8.4-8.4,8.4
+							C149.1,411.9,145.3,408.1,145.3,403.5"/>
+					</g>
+					<g id="g920" transform="scale(2.40596)">
+						<path id="path922" class="st24" d="M626.4,543.6c0-5,4.1-9.1,9.1-9.1s9.1,4.1,9.1,9.1s-4.1,9.1-9.1,9.1S626.4,548.6,626.4,543.6"
+							/>
+					</g>
+					<g id="g928" transform="scale(1.62175)">
+						<path id="path930" class="st25" d="M107.3,171.2c0-1.7,1.3-3,3-3s3,1.3,3,3s-1.3,3-3,3C108.6,174.1,107.3,172.8,107.3,171.2"/>
+					</g>
+					<g id="g932" transform="scale(2.09671)">
+						<path id="path934" class="st26" d="M473.3,239.6c0-2.5,2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6s-2.1,4.6-4.6,4.6S473.3,242.1,473.3,239.6
+							"/>
+					</g>
+					<g id="g936" transform="scale(2.32246)">
+						<path id="path938" class="st27" d="M596.8,215.4c0-2.3,1.9-4.1,4.1-4.1s4.1,1.9,4.1,4.1s-1.9,4.1-4.1,4.1S596.8,217.7,596.8,215.4
+							"/>
+					</g>
+					<g id="g940" transform="scale(1.79466)">
+						<path id="path942" class="st28" d="M263,589.6c0-2,1.7-3.7,3.7-3.7s3.7,1.6,3.7,3.7s-1.7,3.7-3.7,3.7
+							C264.6,593.3,263,591.6,263,589.6"/>
+					</g>
+					<g id="g944" transform="scale(1.74536)">
+						<path id="path946" class="st29" d="M220.9,372c0-2.1,1.7-3.9,3.9-3.9c2.1,0,3.9,1.7,3.9,3.9s-1.7,3.9-3.9,3.9
+							C222.7,375.9,220.9,374.2,220.9,372"/>
+					</g>
+					<g id="g1052" transform="scale(1.74932)">
+						<path id="path1054" class="st30" d="M216.5,371.2c0-4.3,3.5-7.8,7.8-7.8s7.8,3.5,7.8,7.8s-3.5,7.8-7.8,7.8
+							S216.5,375.5,216.5,371.2z"/>
+					</g>
+					<g id="g1056" transform="scale(1.79896)">
+						<path id="path1058" class="st31" d="M258.2,588.2c0-4.3,3.5-7.8,7.8-7.8s7.8,3.5,7.8,7.8s-3.5,7.8-7.8,7.8
+							S258.2,592.5,258.2,588.2z"/>
+					</g>
+					<g id="g1060" transform="scale(2.10491)">
+						<path id="path1062" class="st32" d="M464.7,238.7c0-6.3,5.1-11.4,11.4-11.4s11.4,5.1,11.4,11.4c0,6.3-5.1,11.4-11.4,11.4
+							C469.8,250,464.7,244.9,464.7,238.7z"/>
+					</g>
+					<g id="g1064" transform="scale(2.33066)">
+						<path id="path1066" class="st33" d="M588.6,214.7c0-5.7,4.6-10.3,10.3-10.3s10.3,4.6,10.3,10.3s-4.6,10.3-10.3,10.3
+							C593.2,224.9,588.6,220.3,588.6,214.7z"/>
+					</g>
+					<g id="g1068" transform="scale(1.62554)">
+						<path id="path1070" class="st34" d="M103,170.8c0-3.9,3.2-7,7-7c3.9,0,7,3.2,7,7c0,3.9-3.2,7-7,7C106.1,177.8,103,174.6,103,170.8
+							z"/>
+					</g>
+					<g id="g1078" transform="scale(1.88738)">
+						<path id="path1080" class="st35" d="M342.7,858.4c0,4.7-3.8,8.5-8.5,8.5s-8.5-3.8-8.5-8.5s3.8-8.5,8.5-8.5
+							C338.9,849.9,342.7,853.7,342.7,858.4z"/>
+					</g>
+					<g id="g1108" transform="scale(2.15388)">
+						<path id="path1110" class="st36" d="M516,586.3c0,4.9-3.9,8.8-8.8,8.8s-8.8-3.9-8.8-8.8c0-4.9,3.9-8.8,8.8-8.8
+							S516,581.4,516,586.3z"/>
+					</g>
+					<g id="g1040" transform="scale(2.14928)">
+						<path id="path1042" class="st37" d="M513.4,587.5c0,2.8-2.3,5.1-5.1,5.1c-2.8,0-5.1-2.3-5.1-5.1s2.3-5.1,5.1-5.1
+							C511.1,582.4,513.4,584.7,513.4,587.5"/>
+					</g>
+					<g id="g1020" transform="scale(1.88311)">
+						<path id="path1022" class="st38" d="M339.5,860.4c0,2.5-2.1,4.6-4.6,4.6s-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6
+							C337.4,855.8,339.5,857.8,339.5,860.4"/>
+					</g>
+					<g id="g948" transform="scale(2.17224)">
+						<path id="path950" class="st39" d="M517.9,497c0-2.3,1.9-4.2,4.2-4.2s4.2,1.9,4.2,4.2c0,2.3-1.9,4.2-4.2,4.2
+							C519.8,501.2,517.9,499.4,517.9,497"/>
+					</g>
+					<g id="g1048" transform="scale(2.1766)">
+						<path id="path1050" class="st40" d="M513.4,496c0-4.3,3.4-7.7,7.7-7.7c4.2,0,7.7,3.4,7.7,7.7c0,4.3-3.5,7.7-7.7,7.7
+							C516.9,503.8,513.4,500.3,513.4,496z"/>
+					</g>
+				</g>
+			</svg>
 			</div>
         </div>
     )
