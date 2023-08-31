@@ -13,13 +13,19 @@ export const Card = ({ data })=>{
             </div>
             <div className={styles.container_proyectData}>
                 <div className={styles.container_1}>
-                    <div className={styles.container_title}>
-                        {data.title.split("").map((letter)=>{
+                    {
+                        data.title.split(" ").map((word)=>{
                             return(
-                                <h2>{letter}</h2>
+                                <div className={styles.container_title}>
+                                    {word.split("").map((letter)=>{
+                                        return(
+                                            <h2>{letter}</h2>
+                                            )
+                                        })}
+                                </div>
                             )
-                        })}
-                    </div>
+                        })
+                    }   
                 </div>
                 <div className={styles.container_2}>
                     <div className={styles.subcontainer_1}>
