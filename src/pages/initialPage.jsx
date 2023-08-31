@@ -28,7 +28,9 @@ export const InitialPage = ()=>{
             <div className={styles.container_foottechnologies}>
                 <FootTechnologies/>
             </div>
-            <FrontCard/>
+            <div className={styles.container_frontCard}>
+                <FrontCard/>
+            </div>
             <section className={styles.container1}>
                 <AboutComponent/>
             </section>

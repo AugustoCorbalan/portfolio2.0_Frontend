@@ -28,10 +28,16 @@
 }
 
 .container_foottechnologies{
+    z-index: 2;
     opacity: 0;
     animation: render 1s ease-in-out forwards 13s;
 }
 .container_navBar{
+    z-index: 15;
+    opacity: 0;
+    animation: render 1s ease-in-out forwards 13s;
+}
+.container_frontCard{
     opacity: 0;
     animation: render 1s ease-in-out forwards 13s;
 }

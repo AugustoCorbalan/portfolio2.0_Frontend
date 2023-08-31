@@ -19,25 +19,35 @@
     font-size: 2.1rem;
     letter-spacing: 3px;
 }
-.containerDescription{
-    width: 100%;
-    height: 50%;
-    padding-right: 2.5%;
+.container_description{
+    display: flex;
+    flex-direction: column;
     /* background-color: blueviolet; */
+    width: 50%;
+    height: 100%;
 }
-.containerDescription p{
+.container_text{
+    padding: 20px;
+    width: 100%;
+    height: 80%;
+    padding-right: 2.5%;
+    /* background-color:yellowgreen; */
+}
+.container_text p{
     color: #FFFFFF;
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
     font-size: 1.05rem;
     letter-spacing: 1.5px;
+    text-align: justify;
 }
+
 
 .containerButton{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 15%;
+    height: 20%;
     /* background-color: aquamarine; */
 }
 
@@ -55,7 +65,7 @@
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: color;
-    padding: 0px;
+    padding: 20px;
     cursor: pointer;
 }
 .button:hover {
@@ -92,4 +102,53 @@
     margin-top: 2px;
     margin-right: 2.4rem;
     transform: scaleX(1.5) rotateZ(180deg);
+  }
+
+  .container_decoration{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    height: 80%;
+    margin-left: 5%;
+    margin-top: -6%;
+    /* background-color: aquamarine; */
+  }
+
+  .container_hexagon1{
+    width: 30%;
+    height: 30%;
+    margin-top: 2%;
+    margin-left: 8%;
+  }
+  .container_hexagon2{
+    align-self: flex-end;
+    width: 30%;
+    height: 30%;
+    transform: rotateZ(180deg);
+    margin-right: 8%;
+    margin-bottom: 2%;
+  }
+
+  .container_phrase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* background-color: violet; */
+    width: 80%;
+    height: 100%;
+    right: 10%;
+  }
+  .container_phrase p{
+    /* background-color: red; */
+    display: flex;
+    /* text-align:center; */
+    font-family: 'Tulpen One', cursive;
+    font-size: 55px;
+    font-weight: 100;
+    color: #64646449;
+    color: #22c1f1c5;
+    color:#C78118;
+    color: #f1f1f1;
   }
