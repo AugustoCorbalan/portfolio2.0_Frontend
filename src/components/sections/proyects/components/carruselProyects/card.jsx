@@ -1,6 +1,6 @@
 import styles from './card.module.css';
 import { Carrusel } from './subComponents/carrusel/carrusel.jsx';
-import backgroundRecipes from '../../../../assets/images/proyects/backgroundRecipes.jpg';
+import backgroundRecipes from '../../../../../assets/images/proyects/backgroundRecipes.jpg';
 export const Card = ()=>{
     return(
         <div className={styles.principalContainer}>

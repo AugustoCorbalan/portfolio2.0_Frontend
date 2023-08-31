@@ -1,5 +1,8 @@
 .principalContainer{
     background-color: cadetblue;
+    background-color: #64646449;
+    background-color: #1e1e1e;
+    border: 1.5px solid #C78118;
     width: 560px;
     height: 235px;
     padding: 0 10px 0 10px;
@@ -7,6 +10,7 @@
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     font-weight: 300;
+    box-shadow: 0px 0px 20px 0px black;
 }
 .subContainer1{
     /* background-color: brown; */
@@ -45,6 +49,7 @@
     height: 15%;
     border: none;
     border-top: 1px solid white;
+    border-top: 1px solid #C78118;
 }
 .technologies{
     /* background-color: red; */

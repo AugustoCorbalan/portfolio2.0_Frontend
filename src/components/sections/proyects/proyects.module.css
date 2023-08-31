@@ -1,8 +1,4 @@
-.principalContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.principal_container{
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -10,18 +6,18 @@
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
     /* background-color: red; */
     width: 100%;
     height: 100%;
-    padding-left: 2.5%;
+    padding: 0 0 0 2.5%;
 }
-.containerTitle{ 
+.container_title{ 
     background-color: #C78118;
     padding: 0px 5px 0px 15px;
     width: 100%;
 }
-.containerTitle h2{ 
+.container_title h2{ 
     color: #FFFFFF;
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
@@ -29,7 +25,13 @@
     letter-spacing: 3px;
 }
 
-.containerProyects{
-    width: 95vw;
+.container_proyects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
     overflow: hidden;
+    /* background-color: red; */
 }
+

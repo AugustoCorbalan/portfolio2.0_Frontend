@@ -1,0 +1,154 @@
+.container_card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 630px;
+    /* border: 2px solid red; */
+    height: 400px;
+    overflow: hidden;
+}
+
+.container_proyectData{
+    position: absolute;
+    display: flex;
+    /* justify-content:space-between; */
+    /* border: 2px solid chocolate; */
+    width: 500px;
+    height: 250px;
+}
+.container_1{
+    /* border: 2px solid green; */
+    width: 10%;
+}   
+.container_2{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+}
+.subcontainer_1{
+    /* border: 2px solid salmon; */
+}
+.subcontainer_1 p{
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-align: justify;
+    padding-left: 20px;
+}
+.subcontainer_2{
+    display: flex;
+    justify-content: space-between;
+    /* border:2px solid violet; */
+    width: 100%;
+}
+.container_icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+.icon img{
+    width: 20px;
+    margin: 5px;
+}
+.container_links{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid blue; */
+    height: 50%;
+    width: 40px;
+}
+.container_technologies{
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+.container_image{
+    /* background-color: red; */
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+.container_image img{
+    width: 200px;
+}
+.container_decoration{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+    margin-left: 5%;
+    margin-top: -6%;
+    /* background-color: aquamarine; */
+
+  }
+
+  .container_hexagon1{
+    position: relative;
+    /* border:2px solid blueviolet; */
+    width: 30%;
+    height: 30%;
+    top: -15px;
+    left: -5px;
+  }
+  .container_hexagon2{
+    /* border:2px solid blueviolet; */
+    position: relative;
+    align-self: flex-end;
+    right: 25px;
+    bottom: -50px;
+    width: 30%;
+    height: 30%;
+    transform: rotateZ(180deg);
+    
+  }
+
+  .container_phrase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* background-color: violet; */
+    width: 80%;
+    height: 100%;
+    right: 10%;
+  }
+  .container_phrase p{
+    /* background-color: red; */
+    display: flex;
+    /* text-align:center; */
+    font-family: 'Tulpen One', cursive;
+    font-size: 55px;
+    font-weight: 100;
+    color: #64646449;
+    color: #22c1f1c5;
+    color:#C78118;
+    color: #f1f1f1;
+  }
+
+  .container_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* background-color: #111111bf; */
+    box-shadow: 0 0 5px 0 #0000009f;
+  }
+  .container_title h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Tulpen One', cursive;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 0.8;
+  }
