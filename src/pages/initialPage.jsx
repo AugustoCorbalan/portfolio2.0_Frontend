@@ -11,6 +11,7 @@ import { Proyects } from '../components/sections/proyects/proyects';
 import { LoaderPage } from '../components/loader_page/loaderPage';
 import { InitialAnimation } from '../components/initial_animation/initialAnimation';
 import { Technologies } from '../components/sections/technologies/technologies';
+import { Contact } from '../components/sections/contact/contact';
 export const InitialPage = ()=>{
     const dispatch= useDispatch();
     const start = useSelector((state)=>state.start)
@@ -40,6 +41,9 @@ export const InitialPage = ()=>{
             </section>
             <section className={styles.container_technologies}>
                 <Technologies/>
+            </section>
+            <section className={styles.container_contact}>
+                <Contact/>
             </section>
         </>
     )

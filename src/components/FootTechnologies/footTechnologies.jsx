@@ -13,15 +13,16 @@ export const FootTechnologies = ()=>{
             const fadeEnd=300;
             const fadeRange= fadeEnd-fadeStart;
             const position= window.scrollY;
-            let opacity= 1-((position-fadeStart)/fadeRange)
-            if(opacity>1) opacity=1;
-            if(opacity<0) opacity=0;
-            setOpacity(opacity)
+            let opacity_calc= 1-((position-fadeStart)/fadeRange);
+            if(opacity_calc>1) opacity_calc=1;
+            if(opacity_calc<0) opacity_calc=0;
+            setOpacity(opacity_calc)
+            console.log(opacity_calc)
         }
     })
 
     return(
-        <div className={styles.container} style={{opacity}}>
+        <div className={opacity==0 ? styles.container_none : styles.container} style={{opacity}}>
             <div className={styles.subContainer}>
                 <Carrusel/>
             </div>
