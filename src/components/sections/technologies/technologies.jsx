@@ -24,71 +24,74 @@ export const Technologies =()=>{
                 </div>
             </div>
             <div className={styles.container_content}>
-                <div className={styles.container_technologies}>
-                    <div className={styles.container_frontend}>
-                        <div className={styles.container_subtitle}>
-                            <div className={styles.subtitle}>
-                                <h2>Frontend</h2>
+                <div className={styles.container_left}>
+                    <div className={styles.container_technologies}>
+                        <div className={styles.container_frontend}>
+                            <div className={styles.container_subtitle}>
+                                <div className={styles.subtitle}>
+                                    <h2>Frontend</h2>
+                                </div>
+                            </div>
+                            <div className={styles.container_icons}>
+                                <div className={styles.icon}>
+                                    <img src={html} alt="icon html" />
+                                </div>
+                                <div className={styles.icon}>
+                                    <img src={css} alt="icon css" />
+                                </div>
+                                <div className={styles.icon}>
+                                    <img src={js} alt="icon js" />
+                                </div>
+                                <div className={styles.icon}>
+                                    <img src={materialUi} alt="icon materialUi" />
+                                </div>
+                                <div className={styles.icon}>
+                                    <img src={react} alt="icon react" />
+                                </div>
+                                <div className={styles.icon}>
+                                    <img src={redux} alt="icon redux" />
+                                </div>
+                                <div className={styles.icon}>
+                                    <img src={nextJs} alt="icon nextJs" />
+                                </div>
                             </div>
                         </div>
-                        <div className={styles.container_icons}>
-                            <div className={styles.icon}>
-                                <img src={html} alt="icon html" />
+                        <div className={styles.container_backend}>
+                            <div className={styles.container_subtitle}>
+                                <div className={styles.subtitle}>
+                                    <h2>Backend</h2>
+                                </div>
                             </div>
-                            <div className={styles.icon}>
-                                <img src={css} alt="icon css" />
-                            </div>
-                            <div className={styles.icon}>
-                                <img src={js} alt="icon js" />
-                            </div>
-                            <div className={styles.icon}>
-                                <img src={materialUi} alt="icon materialUi" />
-                            </div>
-                            <div className={styles.icon}>
-                                <img src={react} alt="icon react" />
-                            </div>
-                            <div className={styles.icon}>
-                                <img src={redux} alt="icon redux" />
-                            </div>
-                            <div className={styles.icon}>
-                                <img src={nextJs} alt="icon nextJs" />
+                            <div className={styles.container_icons}>
+                                <div className={styles.icon}>
+                                    <img src={nodeJs} alt="icon react" />
+                                </div>
+                                <div className={styles.icon}>
+                                    <img src={docker} alt="icon docker" />
+                                </div>
+                                <div className={styles.icon}>
+                                    <img src={express} alt="icon express" />
+                                </div>
+                                <div className={styles.icon}>
+                                    <img src={sequelize} alt="icon sequelize" />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={styles.container_backend}>
-                        <div className={styles.container_subtitle}>
-                            <div className={styles.subtitle}>
-                                <h2>Backend</h2>
+                        <div className={styles.container_database}>
+                            <div className={styles.container_subtitle}>
+                                <div className={styles.subtitle}>
+                                    <h2>DataBase</h2>
+                                </div>
                             </div>
-                        </div>
-                        <div className={styles.container_icons}>
-                            <div className={styles.icon}>
-                                <img src={nodeJs} alt="icon react" />
-                            </div>
-                            <div className={styles.icon}>
-                                <img src={docker} alt="icon docker" />
-                            </div>
-                            <div className={styles.icon}>
-                                <img src={express} alt="icon express" />
-                            </div>
-                            <div className={styles.icon}>
-                                <img src={sequelize} alt="icon sequelize" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.container_database}>
-                        <div className={styles.container_subtitle}>
-                            <div className={styles.subtitle}>
-                                <h2>DataBase</h2>
-                            </div>
-                        </div>
-                        <div className={styles.container_icons}>
-                            <div className={styles.icon}>
-                                <img src={mongodb} alt="icon mongodb" />
+                            <div className={styles.container_icons}>
+                                <div className={styles.icon}>
+                                    <img src={mongodb} alt="icon mongodb" />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
                 <div className={styles.container_decoration}>
                     <div className={styles.container_hexagon1}>
                         <HalfHexagon/>
