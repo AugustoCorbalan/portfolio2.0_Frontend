@@ -33,18 +33,23 @@ export const InitialPage = ()=>{
             <div className={styles.container_frontCard}>
                 <FrontCard/>
             </div>
-            <section className={styles.container_about}>
-                <AboutComponent/>
-            </section>
-            <section className={styles.container_proyects}>
-                <Proyects/>
-            </section>
-            <section className={styles.container_technologies}>
-                <Technologies/>
-            </section>
-            <section className={styles.container_contact}>
-                <Contact/>
-            </section>
+            {start ?
+                <>
+                    <section className={styles.container_about}>
+                        <AboutComponent/>
+                    </section>
+                    <section className={styles.container_proyects}>
+                        <Proyects/>
+                    </section>
+                    <section className={styles.container_technologies}>
+                        <Technologies/>
+                    </section>
+                    <section className={styles.container_contact}>
+                        <Contact/>
+                    </section>
+                </> :
+                null
+            }
         </>
     )
 }

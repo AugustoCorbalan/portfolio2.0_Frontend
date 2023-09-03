@@ -33,7 +33,7 @@
     animation: render 1s ease-in-out forwards 13s;
 }
 .container_navBar{
-    z-index: 15;
+    z-index: 5;
     opacity: 0;
     animation: render 1s ease-in-out forwards 13s;
 }

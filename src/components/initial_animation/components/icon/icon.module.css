@@ -1,5 +1,6 @@
 .container{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     width: 0;
@@ -42,34 +43,30 @@
 }
 .hexagon1_color{
     width: 12.5em;
-    /* width: 15vw; */
-    /* height: 34vw; */
     position: absolute;
+    z-index: 5;
 }
 .hexagon1_color polygon{
     fill: transparent;
     stroke-width: 0.75em;
-    stroke: #f19e22;
     stroke: #64646449;
     stroke-dasharray: 1240;
-        animation: 
-            /* style_colorVector 0.5s linear forwards 3.5s,  */
-            style_colorVector 0.1s linear forwards 4.45s, 
-            style_colorVector 0.1s linear forwards 4.95s, 
-            style_colorVector 0.1s linear forwards 5.45s, 
-            style_colorVector 0.1s linear forwards 5.95s, 
-            style_colorVectorFixed 0.5s linear forwards 6.45s
+    animation: 
+        style_colorVector 0.1s linear forwards 4.45s, 
+        style_colorVector 0.1s linear forwards 4.95s, 
+        style_colorVector 0.1s linear forwards 5.45s, 
+        style_colorVector 0.1s linear forwards 5.95s, 
+        style_colorVectorFixed 0.5s linear forwards 6.45s
 }
 .hexagon2_color{
     width: 14.69em;
     position: absolute;
     rotate: 90deg;
-    z-index: -1;
+    z-index: 5;
 }
 .hexagon2_color polygon{
     fill: transparent;
     stroke-width: 0.75em;
-    stroke: #f19e22;
     stroke: #64646449;
     stroke-dasharray: 1240;
     animation: 
@@ -85,6 +82,7 @@
     position: absolute;
     width: 70px;
     height: 140px;
+    z-index: 5;
 }
 .text h1:nth-child(1){
     position: absolute;
@@ -94,7 +92,6 @@
     font-family: 'Tulpen One', cursive;
     font-size: 6.25em;
     font-weight: 100;
-    color: #f19e22;
     color: #64646449;
     animation: 
         /* style_colorText 0.5s linear forwards 3.5s, */
@@ -112,7 +109,6 @@
     font-family: 'Tulpen One', cursive;
     font-size: 6.25em;
     font-weight: 100;
-    color: #f19e22;
     color: #64646449;
     animation: 
         /* style_colorText 0.5s linear forwards 3.5s, */
@@ -472,12 +468,12 @@
         top: 90vh;
     }
     50%{
-        left: -0.319em;
+        left: -4em;
         top: 50vh;
     }
     100%{
         transform:scale(0.15);
-        left: 2vw;
-        top: 4.5vh;
+        left: 5vw;
+        top: 1.2em;
     }
 }

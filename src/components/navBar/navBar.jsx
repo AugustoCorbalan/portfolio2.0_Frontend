@@ -1,11 +1,12 @@
 import styles from './navBar.module.css';
+import { Icon } from './components/icon/icon.jsx';
 import { myData } from '../../data/my_data.js';
 
 export const NavBar = ()=>{
     return(
         <div className={styles.container}>  
             <div className={styles.subContainer1}>
-                
+                <Icon/>
             </div>
             <div className={styles.subContainer2}>
                 <button href="/" className={styles.link}>PRINCIPAL</button>

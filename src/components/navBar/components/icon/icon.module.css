@@ -1,0 +1,65 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    left: -7.5vw;
+    transform: scale(0.15);
+    font-size: 1rem;
+}
+
+.hexagon1_color{
+    width: 12.5em;
+    position: absolute;
+    z-index: 5;
+}
+.hexagon1_color polygon{
+    fill: transparent;
+    stroke-width: 0.75em;
+    stroke: #64646449;
+    stroke: #ffffff;
+    stroke-dasharray: 1240;
+}
+.hexagon2_color{
+    width: 14.69em;
+    position: absolute;
+    rotate: 90deg;
+    z-index: 5;
+}
+.hexagon2_color polygon{
+    fill: transparent;
+    stroke-width: 0.75em;
+    stroke: #64646449;
+    stroke: #ffffff;
+    stroke-dasharray: 1240;
+}
+.text{
+    display: flex;
+    position: absolute;
+    width: 70px;
+    height: 140px;
+    z-index: 5;
+}
+.text h1:nth-child(1){
+    position: absolute;
+    top:0px;
+    left: 0px;
+    align-self: flex-start;
+    font-family: 'Tulpen One', cursive;
+    font-size: 6.25em;
+    font-weight: 100;
+    color: #64646449;
+    color: #ffffff;
+}
+.text h1:nth-child(2){
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    align-self: flex-start;
+    font-family: 'Tulpen One', cursive;
+    font-size: 6.25em;
+    font-weight: 100;
+    color: #64646449;
+    color: #ffffff;
+}
