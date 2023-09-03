@@ -6,10 +6,13 @@ import { useEffect, useState } from 'react';
 export const FrontCard = ()=>{
     const start = useSelector((state)=>state.start)
     const [arrayTexts, setArrayTexts]= useState(["","",""]);
+    // const texts =[
+    //     ["¡Hola!", "Bienvenido a mi portfolio"],
+    //     ["En este espacio, te invito a explorar mis proyectos, conocer mi perfil profesional y explorar las habilidades que he desarrollado hasta ahora.."],
+    //     ["Trataré que sea una experiencia divertida y creativa.."," ", "¡Adelante, la puerta a mi mundo está abierta!"]
+    // ] 
     const texts =[
-        ["¡Hola!", "Bienvenido a mi portfolio"],
-        ["En este espacio, te invito a explorar mis proyectos, conocer mi perfil profesional y explorar las habilidades que he desarrollado hasta ahora.."],
-        ["Trataré que sea una experiencia divertida y creativa.."," ", "¡Adelante, la puerta a mi mundo está abierta!"]
+        ["¡Hola!", "Bienvenido a mi portfolio"]
     ] 
     useEffect(()=>{
         if(start){
@@ -18,11 +21,12 @@ export const FrontCard = ()=>{
     },[start])
 
     const administratorText = async ()=>{   
+        await new Promise((resolve)=>setTimeout(resolve, 1000))
         setArrayTexts(texts[0]);
-        await new Promise((resolve)=>setTimeout(resolve, 5000))
-        setArrayTexts(texts[1]);
-        await new Promise((resolve)=>setTimeout(resolve, 15000))
-        setArrayTexts(texts[2]);
+        // await new Promise((resolve)=>setTimeout(resolve, 5000))
+        // setArrayTexts(texts[1]);
+        // await new Promise((resolve)=>setTimeout(resolve, 15000))
+        // setArrayTexts(texts[2]);
     }
 
 
