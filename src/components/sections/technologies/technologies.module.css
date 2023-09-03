@@ -2,8 +2,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    /* padding-left: 5%; */
-    /* background-color: red; */
+    font-size: 1rem;
 }
 .container_title{
     display: flex;
@@ -13,15 +12,15 @@
 }
 .title{ 
     background-color: #C78118;
-    padding: 0px 5px 0px 15px;
+    padding: 0em 0.3125em 0em 0.9375em;
     width: 100%;
 }
 .container_title h2{ 
     color: #FFFFFF;
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
-    font-size: 2.1rem;
-    letter-spacing: 3px;
+    font-size: 2.1em;
+    letter-spacing: 0.089em;
 }
 .container_subtitle{
   display: flex;
@@ -31,15 +30,15 @@
 }
 .subtitle{ 
   background-color: #C78118;
-  padding: 0px 5px 0px 15px;
+  padding: 0em 0.1488em 0em 0.446em;
   width: 100%;
 }
 .container_subtitle h2{ 
   color: #FFFFFF;
   font-family: 'Oswald', sans-serif;
   font-weight: 100;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
+  font-size: 1.5em;
+  letter-spacing: 0.0416em;
 }
 .container_content{
     display: flex;
@@ -60,7 +59,7 @@
 .container_technologies{
   width: 100%;
   height: 75%;
-  box-shadow: 20px 20px 20px -15px rgba(0, 0, 0, 0.575);
+  box-shadow: 1.25em 1.25em 1.25em -0.937em rgba(0, 0, 0, 0.575);
   /* border: 2px solid red; */
 }
 .container_icons{
@@ -124,17 +123,17 @@
     display: flex;
     /* text-align:center; */
     font-family: 'Tulpen One', cursive;
-    font-size: 55px;
+    font-size: 3.437em;
     font-weight: 100;
     color: #f1f1f1;
   }
   .icon{
     display: flex;
     align-items: center;
-    width: 30px;
+    width: 1.875em;
     overflow: hidden;
-    margin: 15px 15px 0px 15px;
+    margin: 0.9375em 0.9375em 0em 0.9375em;
   }
   .icon img{
-    width: 30px;
+    width: 1.875em;
   }

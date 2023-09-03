@@ -7,6 +7,7 @@
     top: 50vh;
     left: 50vw;
     transform: scale(0.22);
+    font-size: 1rem;
     animation: 
         move_freefall 1s ease-in forwards 3.5s,
         deform1 0.1s ease forwards 4.45s,
@@ -40,14 +41,14 @@
         move_navbar 2s ease-in-out forwards 11s
 }
 .hexagon1_color{
-    width: 200px;
+    width: 12.5em;
     /* width: 15vw; */
     /* height: 34vw; */
     position: absolute;
 }
 .hexagon1_color polygon{
     fill: transparent;
-    stroke-width: 12px;
+    stroke-width: 0.75em;
     stroke: #f19e22;
     stroke: #64646449;
     stroke-dasharray: 1240;
@@ -60,14 +61,14 @@
             style_colorVectorFixed 0.5s linear forwards 6.45s
 }
 .hexagon2_color{
-    width: 235px;
+    width: 14.69em;
     position: absolute;
     rotate: 90deg;
     z-index: -1;
 }
 .hexagon2_color polygon{
     fill: transparent;
-    stroke-width: 12px;
+    stroke-width: 0.75em;
     stroke: #f19e22;
     stroke: #64646449;
     stroke-dasharray: 1240;
@@ -91,7 +92,7 @@
     left: 0px;
     align-self: flex-start;
     font-family: 'Tulpen One', cursive;
-    font-size: 100px;
+    font-size: 6.25em;
     font-weight: 100;
     color: #f19e22;
     color: #64646449;
@@ -109,7 +110,7 @@
     right: 0px;
     align-self: flex-start;
     font-family: 'Tulpen One', cursive;
-    font-size: 100px;
+    font-size: 6.25em;
     font-weight: 100;
     color: #f19e22;
     color: #64646449;
@@ -335,57 +336,57 @@
         top: 90vh;
     }
     100%{
-        left: 25px;
+        left: 1.56em;
         top: 90vh;
     }
 }
 @keyframes move_reboundLeft1 {
     0%{
-        left: 25px;
+        left: 1.56em;
         top: 90vh;
     }
     100%{
-        left: 26.5px;
+        left: 1.656em;
         top: 88vh;
     }
 }
 @keyframes move_reboundLeft2 {
     0%{
-        left: 26.5px;
+        left: 1.656em;
         top: 88vh;
     }
     100%{
-        left: 32px;
+        left: 2em;
         top: 90vh;
     }
 }
 @keyframes move_reboundLeft3 {
     0%{
-        left: 32px;
+        left: 2em;
         top: 90vh;
     }
     100%{
-        left: 38.5px;
+        left: 2.4em;
         top: 89vh;
     }
 }
 @keyframes move_reboundLeft4 {
     0%{
-        left: 38.5px;
+        left: 2.4em;
         top: 89vh;
     }
     100%{
-        left: 50.5px;
+        left: 3.156em;
         top: 90vh;
     }
 }
 @keyframes move_reboundLeft5 {
     0%{
-        left: 50.5px;
+        left: 3.156em;
         top: 90vh;
     }
     100%{
-        left: 65.5px;
+        left: 4.094em;
         top: 90vh;
     }
 }
@@ -467,11 +468,11 @@
 }
 @keyframes move_navbar {
     0%{
-        left: 65.5px;
+        left: 4.094em;
         top: 90vh;
     }
     50%{
-        left: -5.1vw;
+        left: -0.319em;
         top: 50vh;
     }
     100%{

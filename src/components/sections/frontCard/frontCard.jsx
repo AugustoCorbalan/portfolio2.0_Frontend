@@ -1,4 +1,4 @@
-import { UseSelector, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import styles from './frontCard.module.css';
 import { DynamicText } from './dynamicText/dynamicText';
 import { useEffect, useState } from 'react';

@@ -9,6 +9,7 @@
     height: 100%;
     position: absolute;
     perspective: 100000px; /*Que es esto*/
+    font-size: 1rem;
 }
 .carrusel{
     /* background-color: aquamarine; */
@@ -38,19 +39,19 @@
     margin-left: 46.5%;
     position: absolute;
 }
-.figure:nth-child(1){ transform: rotateY(0deg) translateZ(180px) }
-.figure:nth-child(2){ transform: rotateY(27.7deg) translateZ(180px) }
-.figure:nth-child(3){ transform: rotateY(55.4deg) translateZ(180px) }
-.figure:nth-child(4){ transform: rotateY(83.1deg) translateZ(180px) }
-.figure:nth-child(5){ transform: rotateY(110.8deg) translateZ(180px) }
-.figure:nth-child(6){ transform: rotateY(138.5deg) translateZ(180px) }
-.figure:nth-child(7){ transform: rotateY(166.2deg) translateZ(180px) }
-.figure:nth-child(8){ transform: rotateY(193.7deg) translateZ(180px) }
-.figure:nth-child(9){ transform: rotateY(221.4deg) translateZ(180px) }
-.figure:nth-child(10){ transform: rotateY(249.1deg) translateZ(180px) }
-.figure:nth-child(11){ transform: rotateY(276.8deg) translateZ(180px) }
-.figure:nth-child(12){ transform: rotateY(304.5deg) translateZ(180px) }
-.figure:nth-child(13){ transform: rotateY(332.2deg) translateZ(180px) }
+.figure:nth-child(1){ transform: rotateY(0deg) translateZ(11.25em) }
+.figure:nth-child(2){ transform: rotateY(27.7deg) translateZ(11.25em) }
+.figure:nth-child(3){ transform: rotateY(55.4deg) translateZ(11.25em) }
+.figure:nth-child(4){ transform: rotateY(83.1deg) translateZ(11.25em) }
+.figure:nth-child(5){ transform: rotateY(110.8deg) translateZ(11.25em) }
+.figure:nth-child(6){ transform: rotateY(138.5deg) translateZ(11.25em) }
+.figure:nth-child(7){ transform: rotateY(166.2deg) translateZ(11.25em) }
+.figure:nth-child(8){ transform: rotateY(193.7deg) translateZ(11.25em) }
+.figure:nth-child(9){ transform: rotateY(221.4deg) translateZ(11.25em) }
+.figure:nth-child(10){ transform: rotateY(249.1deg) translateZ(11.25em) }
+.figure:nth-child(11){ transform: rotateY(276.8deg) translateZ(11.25em) }
+.figure:nth-child(12){ transform: rotateY(304.5deg) translateZ(11.25em) }
+.figure:nth-child(13){ transform: rotateY(332.2deg) translateZ(11.25em) }
 
 .figure img{
     display: flex;

@@ -7,15 +7,16 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    font-size: 1rem;
 }
 .plot2{
-    margin-right: -30px ;
+    margin-right: -1.875em;
     margin-top: 10vh;
-    width: 300px;
+    width: 18.75em;
 }
 .plot2_secondary path{
     stroke: #6464642d;
-    stroke-width: 2px;
+    stroke-width: 0.125em;
     fill: transparent;
     opacity: 0;
     animation: render 0.1s linear forwards 8.3s, render_principalLines 0.1s linear forwards 10.9s;
@@ -23,7 +24,7 @@
 .plot2_lines path{
     stroke: #f19e2299;
     stroke: #6464642d;
-    stroke-width: 2px;
+    stroke-width: 0.125em;
     fill: transparent;
     stroke-dasharray: 395;
     stroke-dashoffset: 395;
@@ -33,7 +34,7 @@
     stroke: #f19e22;
     stroke: #f19e2299;
     stroke: #6464642d;
-    stroke-width: 2px;
+    stroke-width: 0.125em;
     fill: transparent;
     stroke-dasharray: 20;
     stroke-dashoffset: 5;

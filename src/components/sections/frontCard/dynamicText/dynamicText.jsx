@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import styles from './dynamicText.module.css';
 import soundWriting from '../../../../assets/sounds/writing.mp3';
 import soundIntro from '../../../../assets/sounds/soundIntro.mp3';

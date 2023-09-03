@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useSelector } from 'react-redux';
 import { Carrusel } from './components/Carrusel/carrusel'
 import styles from './footTechnologies.module.css'

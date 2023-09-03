@@ -20,8 +20,8 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     z-index: 1;
 }
 .container_left{
@@ -40,7 +40,7 @@
     justify-content: center;
     align-items: center;
     width: 0px;
-    height: 200px;
+    height: 12.5em;
     z-index: 1;
     position: absolute;
     left: 50vw;

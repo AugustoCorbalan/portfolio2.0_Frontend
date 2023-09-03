@@ -3,9 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 620px;
+    font-size: 1rem;
+    width: 38.75em;
     /* border: 2px solid red; */
-    height: 400px;
+    height: 25em;
     overflow: hidden;
 }
 
@@ -14,15 +15,15 @@
     display: flex;
     /* justify-content:space-between; */
     /* border: 2px solid chocolate; */
-    width: 500px;
-    height: 250px;
+    width: 31.25em;
+    height: 15.62em;
 }
 .container_1{
     display: flex;
     justify-content: center;
     /* border: 2px solid green; */
     width: 10%;
-    box-shadow: 0 0 5px 0 #0000009f;
+    box-shadow: 0 0 0.312em 0 #0000009f;
     padding: 2px;
 }   
 .container_1 :nth-child(1){
@@ -45,10 +46,10 @@
     color: #FFFFFF;
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
+    font-size: 0.85em;
+    letter-spacing: 0.0735em;
     text-align: justify;
-    padding-left: 20px;
+    padding-left: 1.47em;
 }
 .subcontainer_2{
     display: flex;
@@ -63,15 +64,15 @@
     width: 60%;
 }
 .icon img{
-    width: 20px;
-    margin: 5px;
+    width: 1.25em;
+    margin: 0.3125em;
 }
 .container_links{
     display: flex;
     align-items: center;
     /* border: 2px solid blue; */
     height: 50%;
-    width: 40px;
+    width: 2.5em;
 }
 .container_technologies{
     display: flex;
@@ -85,8 +86,8 @@
     justify-content: flex-end;
 }
 .container_image img{
-    width: 200px;
-    border-radius: 2px;
+    width: 12.5em;
+    border-radius: 0.125em;
 }
 .container_decoration{
     display: flex;
@@ -105,15 +106,15 @@
     /* border:2px solid blueviolet; */
     width: 30%;
     height: 30%;
-    top: -15px;
-    left: -5px;
+    top: -0.9375em;
+    left: -0.3125em;
   }
   .container_hexagon2{
     /* border:2px solid blueviolet; */
     position: relative;
     align-self: flex-end;
-    right: 25px;
-    bottom: -50px;
+    right: 1.5625em;
+    bottom: -3.125em;
     width: 30%;
     height: 30%;
     transform: rotateZ(180deg);
@@ -136,7 +137,7 @@
     display: flex;
     /* text-align:center; */
     font-family: 'Tulpen One', cursive;
-    font-size: 55px;
+    font-size: 3.4375em;
     font-weight: 100;
     color: #f1f1f1;
   }
@@ -156,7 +157,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Tulpen One', cursive;
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: 600;
     line-height: 0.85;
   }

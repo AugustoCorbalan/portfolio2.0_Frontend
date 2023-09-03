@@ -4,32 +4,33 @@
     align-items: center;
     width: 50%;
     height: 50%;
+    font-size: 1em;
 }
 .hexagon1_color{
-    width: 200px;
+    width: 12.5em;
     position: absolute;
 }
 .hexagon1_color polygon{
     fill: transparent;
-    stroke-width: 12px;
+    stroke-width: 0.75em;
     stroke: #f19e22;
 }
 .hexagon2_color{
-    width: 235px;
+    width: 14.69em;
     position: absolute;
     rotate: 90deg;
     z-index: -1;
 }
 .hexagon2_color polygon{
     fill: transparent;
-    stroke-width: 12px;
+    stroke-width: 0.75em;
     stroke: #f19e22;
 }
 .text{
     display: flex;
     position: absolute;
-    width: 70px;
-    height: 140px;
+    width: 4.37em;
+    height: 8.75em;
 }
 .text h1:nth-child(1){
     position: absolute;
@@ -37,7 +38,7 @@
     left: 0px;
     align-self: flex-start;
     font-family: 'Tulpen One', cursive;
-    font-size: 100px;
+    font-size: 6.25em;
     font-weight: 100;
     color: #f19e22;
 }
@@ -47,7 +48,7 @@
     right: 0px;
     align-self: flex-start;
     font-family: 'Tulpen One', cursive;
-    font-size: 100px;
+    font-size: 6.25em;
     font-weight: 100;
     color: #f19e22;
 }
