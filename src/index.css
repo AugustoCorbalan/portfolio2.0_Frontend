@@ -17,3 +17,39 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-thumb:hover{
   background-color: #9a6210;
 }
+@media (min-width: 1300px){
+  *{
+    font-size: 16.6px;
+    /* background-color: red; */
+  }
+}
+@media (min-width: 1390px){
+  *{
+    font-size: 17.6px;
+    /* background-color: red; */
+  }
+}
+@media (min-width: 1500px){
+  *{
+    font-size: 19px;
+    /* background-color: red; */
+  }
+}
+@media (min-width: 1580px){
+  *{
+    font-size: 20px;
+    /* background-color: red; */
+  }
+}
+@media (min-width: 1890px){
+  *{
+    font-size: 24px;
+    /* background-color: red; */
+  }
+}
+@media (min-width: 2100px){
+  *{
+    font-size: 27px;
+    /* background-color: red; */
+  }
+}
