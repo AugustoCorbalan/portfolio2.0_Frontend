@@ -88,10 +88,10 @@ export const Technologies =()=>{
                                 <div className={styles.icon}>
                                     <img src={mongodb} alt="icon mongodb" />
                                 </div>
-                            </div>
-                            <div className={styles.container_icons}>
-                                <div className={styles.icon}>
-                                    <img src={postgreSql} alt="icon postgreSql" />
+                                <div className={styles.container_icons}>
+                                    <div className={styles.icon}>
+                                        <img src={postgreSql} alt="icon postgreSql" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
