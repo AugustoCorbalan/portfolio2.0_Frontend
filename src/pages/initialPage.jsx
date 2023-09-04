@@ -21,8 +21,11 @@ export const InitialPage = ()=>{
         }, 13000)
     },[])
     return(
-        <>
-            <LoaderPage/>
+        <>  {
+             !start ?
+                <LoaderPage/> :
+                null
+            }
             <div className={styles.container_navBar}>
                 <NavBar/>
             </div>
