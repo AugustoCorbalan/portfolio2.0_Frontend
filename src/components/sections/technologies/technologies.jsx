@@ -11,6 +11,7 @@ import  docker from '../../../assets/images/iconsTechnologies/docker.png';
 import  express from '../../../assets/images/iconsTechnologies/express.png';
 import  sequelize from '../../../assets/images/iconsTechnologies/sequelize.png';
 import  mongodb from '../../../assets/images/iconsTechnologies/mongodb.png';
+import  postgreSql from '../../../assets/images/iconsTechnologies/postgreSql.png';
 
 
 import { HalfHexagon } from '../../svg/half_hexagon';
@@ -86,6 +87,11 @@ export const Technologies =()=>{
                             <div className={styles.container_icons}>
                                 <div className={styles.icon}>
                                     <img src={mongodb} alt="icon mongodb" />
+                                </div>
+                            </div>
+                            <div className={styles.container_icons}>
+                                <div className={styles.icon}>
+                                    <img src={postgreSql} alt="icon postgreSql" />
                                 </div>
                             </div>
                         </div>
