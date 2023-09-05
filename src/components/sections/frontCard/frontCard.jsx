@@ -12,7 +12,7 @@ export const FrontCard = ()=>{
     //     ["Trataré que sea una experiencia divertida y creativa.."," ", "¡Adelante, la puerta a mi mundo está abierta!"]
     // ] 
     const texts =[
-        ["¡Hola!", "Bienvenido a mi portfolio"]
+        ["¡Hola!", "¡Bienvenido/a a mi portafolio!"]
     ] 
     useEffect(()=>{
         if(start){
