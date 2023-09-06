@@ -7,4 +7,12 @@
     height: 100vh;
     z-index: 2;
     font-size: 1rem;
+    animation: display_none forwards 5.8s ;
+}
+/* Luego de que termine la presentacion del loader (5.8 segundos) coloco el contenedor en display: none */
+
+@keyframes display_none {
+    to{
+        display: none;
+    }   
 }

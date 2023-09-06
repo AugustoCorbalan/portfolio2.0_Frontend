@@ -1,0 +1,124 @@
+
+.plot1{
+    /* background-color: rgba(127, 255, 212, 0.348); */
+    left: 0px;
+    margin-left: -13.937em;
+    margin-bottom: 10vh;
+    width: 32em;
+    font-size: 1rem;
+}
+.plot1_principal path{
+    position: relative;
+    stroke: #64646449;
+    stroke-width: 0.312em;
+    fill: transparent;
+    opacity: 0;
+    animation: render 0.1s linear forwards, render_principalLines 0.1s linear forwards;
+}
+.plot1_secondary path{
+    stroke: #6464642d;
+    stroke-width: 0.125em;
+    fill: transparent;
+    opacity: 0;
+    animation: render 0.1s linear forwards, render_secondaryLines 0.1s linear forwards;
+}
+.plot1_line path{
+    stroke: #f19e2299;
+    stroke-width: 0.3125em;
+    fill: transparent;
+    stroke-dasharray: 345;
+    stroke-dashoffset: 345;
+    /* animation: render_lines 2s linear forwards 15s; */
+}
+.plot1_traceLine path{
+    stroke: #f19e22;
+    stroke: #f19e2299;
+    stroke-width: 0.3125em;
+    fill: transparent;
+    stroke-dasharray: 20;
+    stroke-dashoffset: 5;
+    opacity: 0;
+    animation: render 0.1s linear forwards;
+}
+/*-------------- Renderizados independientes -------------- */
+/* .path888{
+    stroke: #1e1e1e;
+    fill: transparent;
+    stroke-width: 0.625em;
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    animation: render_path888 0.7s ease-in forwards;
+}
+.path878{
+    stroke: #1e1e1e;
+    fill: transparent;
+    stroke-width: 0.625em;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 0;
+    animation: render_path878 0.5s linear forwards 10.4s;
+}
+.path876{
+    stroke: #1e1e1e;
+    fill: transparent;
+    stroke-width: 0.625em;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 0;
+    animation: render_path878 0.1s linear forwards 10.4s;
+} */
+
+
+/* -------------------------------------------------------------------------- */
+
+@keyframes render_path888 {
+    0%{
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: -760;
+    }
+}
+@keyframes render_path878 {
+    0%{
+        stroke-dashoffset: 0;
+    }
+    100%{
+        stroke-dashoffset: -630;
+    }
+}
+@keyframes render_lines {
+    0%{
+        stroke-dashoffset: 345;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes render_traceLine {
+    0%{
+        stroke-dashoffset: 630;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes render_secondaryLines {
+    to{
+        stroke: #f19e2267;
+    }
+}
+
+@keyframes render_principalLines {
+    to{
+        stroke: #f19e22;
+    }
+}
+
+@keyframes render {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

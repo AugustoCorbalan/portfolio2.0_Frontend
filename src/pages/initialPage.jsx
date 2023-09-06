@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { setStart } from '../Redux/actions';
+import { useState } from 'react';
+import { setStart, setPresentation } from '../Redux/actions';
 import styles from './initialPage.module.css';
 import { NavBar } from '../components/navBar/navBar';
 import { FrontCard } from '../components/sections/frontCard/frontCard';
@@ -14,26 +15,44 @@ import { Technologies } from '../components/sections/technologies/technologies';
 import { Contact } from '../components/sections/contact/contact';
 export const InitialPage = ()=>{
     const dispatch= useDispatch();
-    const start = useSelector((state)=>state.start)
+    const {start, presentation} = useSelector((state)=>state);
+    const [ buttonStatus, setButtonStatus ]  = useState(false);
     useEffect(()=>{
         setTimeout(()=>{
             dispatch(setStart(true))
         }, 13000)
     },[])
+    useEffect(()=>{
+        setTimeout(()=>{
+            setButtonStatus(true)
+        }, 4000)
+    }, [])
+
+    const presentation_Off=()=>{
+        setButtonStatus(false);
+        dispatch(setPresentation(false));
+        dispatch(setStart(true));
+    }
     return(
-        <>  {
-             !start ?
-                <LoaderPage/> :
-                null
+        < div className={styles.general_container}>
+            <LoaderPage/> 
+            {
+                buttonStatus && !start ?
+                <>
+                    <button onClick={ presentation_Off }className={styles.button_presentation_Off}>
+                        Omitir presentación
+                    </button>
+                </> :
+                    null
             }
-            <div className={styles.container_navBar}>
+            { presentation ? <InitialAnimation/> : null }
+            <div className={ presentation? styles.container_navBar : styles.container_navBar_NonePresentation}>
                 <NavBar/>
             </div>
-            <InitialAnimation/>
-            <div className={styles.container_foottechnologies}>
+            <div className={ presentation? styles.container_foottechnologies : styles.container_foottechnologies_NonePresentation}>
                 <FootTechnologies/>
             </div>
-            <div className={styles.container_frontCard}>
+            <div className={ presentation? styles.container_frontCard : styles.container_frontCard_NonePresentation}>
                 <FrontCard/>
             </div>
             {start ?
@@ -52,7 +71,7 @@ export const InitialPage = ()=>{
                     </section>
                 </> :
                 null
-            }
-        </>
+            }    
+        </div>
     )
 }

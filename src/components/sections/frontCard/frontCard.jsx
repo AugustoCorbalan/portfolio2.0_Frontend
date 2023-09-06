@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import styles from './frontCard.module.css';
-import { DynamicText } from './dynamicText/dynamicText';
+import { DynamicText } from './components/dynamicText/dynamicText';
+import { Plot } from './components/plot/plot/plot.jsx';
 import { useEffect, useState } from 'react';
 
 export const FrontCard = ()=>{
@@ -32,6 +33,7 @@ export const FrontCard = ()=>{
 
     return(
         <div className={styles.container}>
+            <Plot/>
             <div className={styles.subContainer}>
                 <div className={styles.title}>
                     <h1>CORBALAN AUGUSTO N.</h1>

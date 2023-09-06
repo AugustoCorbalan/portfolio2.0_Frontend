@@ -1,8 +1,9 @@
-import { SET_SOUND, SET_START } from "./actions";
+import { SET_SOUND, SET_START, SET_PRESENTATION } from "./actions";
 
 const initialState={
     sound: false,
     start: false,
+    presentation: true,
 }
 
 const rootReducer=(state=initialState, action)=>{
@@ -17,6 +18,11 @@ const rootReducer=(state=initialState, action)=>{
             return{
                 ...state,
                 start: action.payload
+            }
+        case SET_PRESENTATION:
+            return {
+                ...state,
+                presentation: action.payload
             }
         default:
             return{

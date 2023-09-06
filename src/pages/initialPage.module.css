@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+.general_container{
+    overflow: hidden;
+}
 .container{
     /* background-color: aquamarine; */
     width: 75%;
@@ -41,6 +44,20 @@
     opacity: 0;
     animation: render 1s ease-in-out forwards 13s;
 }
+.container_foottechnologies_NonePresentation{
+    z-index: 2;
+    opacity: 0;
+    animation: render 1s ease-in-out forwards;
+}
+.container_navBar_NonePresentation{
+    z-index: 5;
+    opacity: 0;
+    animation: render 1s ease-in-out forwards;
+}
+.container_frontCard_NonePresentation{
+    opacity: 0;
+    animation: render 1s ease-in-out forwards;
+}
 .container_technologies{
     display: flex;
     align-items: center;
@@ -48,6 +65,28 @@
     height: 100vh;
     background-color: #1e1e1e;
     z-index: -1;
+}
+.button_presentation_Off{
+    position: absolute;
+    background-color: #1e1e1e;
+    top: 85vh;
+    left: 75vw;
+    width: 10em;
+    height: 3em;
+    /* border: 1px solid #f1f1f1; */
+    border: none;
+    border-radius: 0.25em;
+    z-index: 1;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #f1f1f1;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+}
+.button_presentation_Off:hover{
+    color: #f19e22;
+    border-color: #f19e22;
+    scale: 0.95;
 }
 @keyframes render {
     to{

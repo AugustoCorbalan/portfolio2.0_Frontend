@@ -1,0 +1,75 @@
+.container_plot2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 1rem;
+}
+.plot2{
+    margin-right: -1.875em;
+    margin-top: 10vh;
+    width: 18.75em;
+}
+.plot2_secondary path{
+    stroke: #6464642d;
+    stroke-width: 0.125em;
+    fill: transparent;
+    opacity: 0;
+    animation: render 0.1s linear forwards, render_principalLines 0.1s linear forwards;
+}
+.plot2_lines path{
+    stroke: #f19e2299;
+    stroke: #6464642d;
+    stroke-width: 0.125em;
+    fill: transparent;
+    stroke-dasharray: 395;
+    stroke-dashoffset: 395;
+    animation: render_lines 1.5s ease-in-out forwards;
+}
+.plot2_traceLine path{
+    stroke: #f19e22;
+    stroke: #f19e2299;
+    stroke: #6464642d;
+    stroke-width: 0.125em;
+    fill: transparent;
+    stroke-dasharray: 20;
+    stroke-dashoffset: 5;
+    opacity: 0;
+    /* animation: render 0.1s linear forwards 8.3s; */
+} 
+
+@keyframes render {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes render_lines {
+    0%{
+        stroke-dashoffset: -945;
+        stroke: #f19e2299;
+
+    }
+    100%{
+        stroke-dashoffset: 0;
+        stroke: #f19e2299;
+    }
+}
+
+@keyframes render_secondaryLines {
+    to{
+        stroke: #f19e2267;
+    }
+}
+
+@keyframes render_principalLines {
+    to{
+        stroke: #f19e22;
+    }
+}
