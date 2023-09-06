@@ -107,45 +107,149 @@
   .container_decoration{
     display: flex;
     justify-content: space-between;
-    width: 40%;
-    height: 80%;
+    width: 31.2em;
+    height: 24.6em;
     margin-left: 5%;
     margin-top: -6%;
     /* background-color: aquamarine; */
   }
 
-  .container_hexagon1{
+  .container_hexagon1_open{
+    position: absolute;
     width: 30%;
     height: 30%;
-    margin-top: 2%;
-    margin-left: 8%;
+    animation: open_hexagon1 1s ease-in-out forwards;
   }
-  .container_hexagon2{
+  .container_hexagon2_open{
+    position: absolute;
     align-self: flex-end;
     width: 30%;
     height: 30%;
     transform: rotateZ(180deg);
-    margin-right: 8%;
-    margin-bottom: 2%;
+    animation: open_hexagon2 1s ease-in-out forwards;
   }
-
-  .container_phrase{
+  .container_hexagon1_close{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    animation: close_hexagon1 1s ease-in-out forwards;
+  }
+  .container_hexagon2_close{
+    position: absolute;
+    align-self: flex-end;
+    width: 30%;
+    height: 30%;
+    transform: rotateZ(180deg);
+    animation: close_hexagon2 1s ease-in-out forwards;
+  }
+  .container_phrase_open{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
-    /* background-color: violet; */
     width: 80%;
     height: 100%;
-    right: 10%;
+    animation: open_phrase 1s ease-in-out forwards;
   }
-  .container_phrase p{
-    /* background-color: red; */
+  .container_phrase_open p{
     display: flex;
-    /* text-align:center; */
     font-family: 'Tulpen One', cursive;
     font-size: 3.4375em;
     font-weight: 100;
     color: #f1f1f1;
   }
+  .container_phrase_close{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    animation: close_phrase 1s ease-in-out forwards;
+  }
+  .container_phrase_close p{
+    display: flex;
+    font-family: 'Tulpen One', cursive;
+    font-size: 3.4375em;
+    font-weight: 100;
+    color: #f1f1f1;
+  }
+
+  @keyframes open_hexagon1 {
+    from{
+      margin-top: 31%;
+      /* margin-top: 7.4em; */
+      /* margin-left: 7.7em; */
+      margin-left: 24.5%;
+    }
+    to{
+      margin-top: 8%;
+      /* margin-top: 2.4em; */
+      margin-left: 8%;
+      /* margin-left: 2.4em; */
+    }
+  }
+  @keyframes open_hexagon2 {
+    from{
+      margin-left: 25%;
+      /* margin-left: 7.8em; */
+      margin-bottom: 31%;
+      /* margin-bottom: 7.2em; */
+    }
+    to{
+      margin-left: 60%;
+      /* margin-left: 18.5em; */
+      margin-bottom: 8%;
+      /* margin-bottom: 2.4em; */
+    }
+  }
+  @keyframes close_hexagon1 {
+    from{
+      margin-top: 8%;
+      /* margin-top: 2.4em; */
+      /* margin-left: 8%; */
+      margin-left: 2.4em;
+    }
+    to{
+      margin-top: 31%;
+      /* margin-top: 7.4em; */
+      margin-left: 24.5%;
+      /* margin-left: 7.7em; */
+    }
+  }
+  @keyframes close_hexagon2 {
+    from{
+      margin-left: 60%;
+      /* margin-left: 18.5em; */
+      margin-bottom: 8%;
+      /* margin-bottom: 2.4em; */
+    }
+    to{
+      margin-left: 25%;
+      /* margin-left: 7.8em; */
+      margin-bottom: 31%;
+      /* margin-bottom: 7.2em; */
+    }
+  }
+  @keyframes close_phrase {
+   from{
+    right: 10%;
+    scale: 1;
+   }
+    to{
+      right: 20%;
+      scale: 0.05;
+   } 
+  }
+  @keyframes open_phrase {
+    from{
+      right: 20%;
+      scale: 0.05;
+    }
+     to{
+      right: 10%;
+      scale: 1;
+    } 
+   }

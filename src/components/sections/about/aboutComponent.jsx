@@ -6,6 +6,20 @@ import { HalfHexagon } from '../../svg/half_hexagon';
 import styles from './aboutComponent.module.css';
 export const AboutComponent=()=>{
     const [page, setPage] = useState(1);
+    const [ decoration_status, setDecoration ] = useState(false);
+
+    const scroll_position =()=>{
+        let verticalScroll = window.scrollY;
+        console.log(verticalScroll)
+        if(verticalScroll >= 400 && verticalScroll < 850 ){
+            setDecoration(true)
+        }
+        else {
+            setDecoration(false)
+        }
+    }
+    window.addEventListener("scroll", scroll_position);
+
     return(
         <div className={styles.container}>
             <div className={styles.containerTitle}>
@@ -35,13 +49,13 @@ export const AboutComponent=()=>{
                 </div>
             </div>
             <div className={styles.container_decoration}>
-                <div className={styles.container_hexagon1}>
+                <div className={decoration_status? styles.container_hexagon1_open : styles.container_hexagon1_close}>
                     <HalfHexagon/>
                 </div>
-                <div className={styles.container_phrase}>
+                <div className={ decoration_status? styles.container_phrase_open : styles.container_phrase_close}>
                     <p>My mind does not stop <br/> searching for solutions, <br/>the code is my new best ally...</p>
                 </div>
-                <div className={styles.container_hexagon2}>
+                <div className={decoration_status? styles.container_hexagon2_open : styles.container_hexagon2_close}>
                     <HalfHexagon/>
                 </div>
             </div>

@@ -17,7 +17,6 @@ export const FootTechnologies = ()=>{
             if(opacity_calc>1) opacity_calc=1;
             if(opacity_calc<0) opacity_calc=0;
             setOpacity(opacity_calc)
-            console.log(opacity_calc)
         }
     })
 
