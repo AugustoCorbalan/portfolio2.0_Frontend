@@ -37,6 +37,9 @@
     height: 100%;
     margin: 0em 1.5625em 0em 1.5625em;
 }
+.container_icon:hover{
+    scale: 0.9;
+}
 .container_icon img{
     height: 60%;
 }

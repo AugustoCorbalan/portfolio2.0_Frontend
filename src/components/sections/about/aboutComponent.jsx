@@ -10,8 +10,7 @@ export const AboutComponent=()=>{
 
     const scroll_position =()=>{
         let verticalScroll = window.scrollY;
-        console.log(verticalScroll)
-        if(verticalScroll >= 400 && verticalScroll < 850 ){
+        if(verticalScroll >= 400 && verticalScroll < 900 ){
             setDecoration(true)
         }
         else {

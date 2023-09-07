@@ -10,13 +10,23 @@
     overflow: hidden;
 }
 
-.container_proyectData{
+.container_proyectData_open{
     position: absolute;
     display: flex;
     /* justify-content:space-between; */
     /* border: 2px solid chocolate; */
     width: 31.25em;
     height: 15.62em;
+    animation: data_open 0.9s linear forwards;
+}
+.container_proyectData_close{
+    position: absolute;
+    display: flex;
+    /* justify-content:space-between; */
+    /* border: 2px solid chocolate; */
+    width: 31.25em;
+    height: 15.62em;
+    animation: data_close 1s linear forwards;
 }
 .container_1{
     display: flex;
@@ -101,27 +111,52 @@
 
   }
 
-  .container_hexagon1{
+  .container_hexagon1_open{
     position: relative;
     /* border:2px solid blueviolet; */
     width: 30%;
     height: 30%;
-    top: -0.9375em;
-    left: -0.3125em;
+    animation: open_hexagon1 0.7s linear forwards;
   }
-  .container_hexagon2{
+  .container_hexagon2_open{
     /* border:2px solid blueviolet; */
     position: relative;
     align-self: flex-end;
-    right: 1.5625em;
-    bottom: -3.125em;
+    width: 30%;
+    height: 30%;
+    transform: rotateZ(180deg); 
+    animation: open_hexagon2 0.7s linear forwards;
+
+  }
+  .container_hexagon1_close{
+    position: relative;
+    /* border:2px solid blueviolet; */
+    width: 30%;
+    height: 30%;
+    animation: close_hexagon1 1s linear forwards;
+  }
+  .container_hexagon2_close{
+    /* border:2px solid blueviolet; */
+    position: relative;
+    align-self: flex-end;
     width: 30%;
     height: 30%;
     transform: rotateZ(180deg);
-    
+    animation: close_hexagon2 1s linear forwards;
   }
 
-  .container_phrase{
+  .container_phrase_open{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* background-color: violet; */
+    width: 80%;
+    height: 100%;
+    right: 10%;
+  }
+  .container_phrase_close{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,4 +195,65 @@
     font-size: 2em;
     font-weight: 600;
     line-height: 0.85;
+  }
+
+  @keyframes open_hexagon1 {
+    from{
+        top: 6.9em;
+        left: 12.8em;
+    }
+    to{
+        top: -0.9375em;
+        left: -0.3125em;
+    }
+  }
+
+  @keyframes close_hexagon1 {
+    from{
+        top: -0.9375em;
+        left: -0.3125em;
+    }
+    to{
+        top: 6.9em;
+        left: 12.8em;
+    }
+  }
+  @keyframes open_hexagon2 {
+    from{
+        right: 12.8em;
+        bottom: 6.9em;
+    }
+    to{
+        right: 1.5625em;
+        bottom: -3.125em;
+    }
+  }
+  @keyframes close_hexagon2 {
+    from{
+        right: 1.5625em;
+        bottom: -3.125em;
+    }
+    to{
+        right: 12.8em;
+        bottom: 6.9em;
+    }
+  }
+
+  @keyframes data_open {
+    from{
+        scale: 0.1;
+    }
+    to{
+        scale: 1;
+    }
+  }
+  @keyframes data_close {
+    from{
+        scale: 1;
+    }
+    to{
+        scale: 0.1;
+        left: 4.5em;
+        top: 3.5em;
+    }
   }

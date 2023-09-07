@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styles from './technologies.module.css';
 import html from '../../../assets/images/iconsTechnologies/html5.png';
 import css from '../../../assets/images/iconsTechnologies/css.png';
@@ -12,11 +13,22 @@ import  express from '../../../assets/images/iconsTechnologies/express.png';
 import  sequelize from '../../../assets/images/iconsTechnologies/sequelize.png';
 import  mongodb from '../../../assets/images/iconsTechnologies/mongodb.png';
 import  postgreSql from '../../../assets/images/iconsTechnologies/postgreSql.png';
-
-
 import { HalfHexagon } from '../../svg/half_hexagon';
 
+
 export const Technologies =()=>{
+    const [ decoration_status, setDecoration ] = useState(false);
+    
+    const scroll_position =()=>{
+        let verticalScroll = window.scrollY;
+        if(verticalScroll >= 1770){
+            setDecoration(true)
+        }
+        else {
+            setDecoration(false)
+        }
+    }
+    window.addEventListener("scroll", scroll_position);
     return(
         <div className={styles.principal_container}>
             <div className={styles.container_title}>
@@ -99,13 +111,13 @@ export const Technologies =()=>{
                 </div>
                 
                 <div className={styles.container_decoration}>
-                    <div className={styles.container_hexagon1}>
+                    <div className={decoration_status? styles.container_hexagon1_open : styles.container_hexagon1_close}>
                         <HalfHexagon/>
                     </div>
-                    <div className={styles.container_phrase}>
+                    <div className={decoration_status? styles.container_phrase_open : styles.container_phrase_close}>
                         <p>In the programming universe, <br/> curiosity is your compass and <br/> humility your constant companion.</p>
                     </div>
-                    <div className={styles.container_hexagon2}>
+                    <div className={decoration_status? styles.container_hexagon2_open : styles.container_hexagon2_close}>
                         <HalfHexagon/>
                     </div>
                 </div>

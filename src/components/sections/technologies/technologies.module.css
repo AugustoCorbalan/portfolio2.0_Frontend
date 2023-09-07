@@ -91,27 +91,39 @@
 .container_decoration{
     display: flex;
     justify-content: space-between;
-    width: 40%;
-    height: 80%;
+    width: 31em;
+    height: 24.5em;
     margin-left: 5%;
   }
 
-  .container_hexagon1{
+  .container_hexagon1_open{
+    position: absolute;
     width: 30%;
     height: 30%;
-    margin-top: 2%;
-    margin-left: 8%;
+    animation: open_hexagon1 1s linear forwards;
   }
-  .container_hexagon2{
-    align-self: flex-end;
+  .container_hexagon2_open{
+    position: absolute;
     width: 30%;
     height: 30%;
     transform: rotateZ(180deg);
-    margin-right: 8%;
-    margin-bottom: 2%;
+    animation: open_hexagon2 1s linear forwards;
+  }
+  .container_hexagon1_close{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    animation: close_hexagon1 1s linear forwards;
+  }
+  .container_hexagon2_close{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    transform: rotateZ(180deg);
+    animation: close_hexagon2 1s linear forwards;
   }
 
-  .container_phrase{
+  .container_phrase_close{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,8 +133,30 @@
     width: 80%;
     height: 100%;
     right: 10%;
+    animation: phrase_close 1s linear forwards;
   }
-  .container_phrase p{
+  .container_phrase_close p{
+    /* background-color: red; */
+    display: flex;
+    /* text-align:center; */
+    font-family: 'Tulpen One', cursive;
+    font-size: 3.437em;
+    font-weight: 100;
+    color: #f1f1f1;
+  }
+  .container_phrase_open{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* background-color: violet; */
+    width: 80%;
+    height: 100%;
+    right: 10%;
+    animation: phrase_open 1s linear forwards;
+  }
+  .container_phrase_open p{
     /* background-color: red; */
     display: flex;
     /* text-align:center; */
@@ -140,4 +174,62 @@
   }
   .icon img{
     width: 1.875em;
+  }
+
+  @keyframes open_hexagon1 {
+    from{
+      top: 9.6em;
+      left: 10.8em;
+    }
+    to{
+      top: 0.6em;
+      left: 2.1em;
+    }
+  }
+  @keyframes close_hexagon1 {
+    from{
+      top: 0.6em;
+      left: 2.1em;
+    }
+    to{
+      top: 9.6em;
+      left: 10.8em;
+    }
+  }
+  @keyframes open_hexagon2 {
+    from{
+      right: 10.8em;
+      bottom: 9.6em;
+    }
+    to{
+      right: 2.5em;
+      bottom: 0.6em;
+    }
+  }
+  @keyframes close_hexagon2 {
+    from{
+      right: 2.5em;
+      bottom: 0.6em;
+    }
+    to{
+      right: 10.8em;
+      bottom: 9.6em;
+    }
+  }
+
+  @keyframes phrase_open {
+    from{
+      scale: 0.1;
+    }
+    to{
+      scale: 1;
+    }
+  }
+  @keyframes phrase_close {
+    from{
+      scale: 1;
+    }
+    to{
+      scale: 0.1;
+    }
   }

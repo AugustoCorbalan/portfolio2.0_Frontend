@@ -1,17 +1,32 @@
+import { useState } from 'react';
 import styles from './card.module.css';
 import { HalfHexagon } from '../../../../svg/half_hexagon';
 export const Card = ({ data })=>{
+    const [ card_status, setStatus ] = useState( false );
+
+    const scroll_position =()=>{
+        let verticalScroll = window.scrollY;
+        console.log(verticalScroll)
+        if(verticalScroll >= 1000 && verticalScroll < 2200 ){
+            setStatus(true)
+        }
+        else {
+            setStatus(false)
+        }
+    }
+    window.addEventListener("scroll", scroll_position);
+    
     return(
         <div className={styles.container_card}>
             <div className={styles.container_decoration}>
-                <div className={styles.container_hexagon1}>
+                <div className={ card_status? styles.container_hexagon1_open : styles.container_hexagon1_close}>
                     <HalfHexagon/>
                 </div>
-                <div className={styles.container_hexagon2}>
+                <div className={ card_status? styles.container_hexagon2_open : styles.container_hexagon2_close }>
                     <HalfHexagon/>
                 </div>
             </div>
-            <div className={styles.container_proyectData}>
+            <div className={ card_status? styles.container_proyectData_open : styles.container_proyectData_close}>
                 <div className={styles.container_1}>
                     {
                         data.title.split(" ").map((word)=>{
