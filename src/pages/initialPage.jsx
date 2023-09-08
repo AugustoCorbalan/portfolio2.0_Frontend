@@ -49,24 +49,26 @@ export const InitialPage = ()=>{
             <div className={ presentation? styles.container_navBar : styles.container_navBar_NonePresentation}>
                 <NavBar/>
             </div>
-            <div className={ presentation? styles.container_foottechnologies : styles.container_foottechnologies_NonePresentation}>
-                <FootTechnologies/>
-            </div>
-            <div className={ presentation? styles.container_frontCard : styles.container_frontCard_NonePresentation}>
-                <FrontCard/>
-            </div>
+            <section id='principal'>
+                <div className={ presentation? styles.container_foottechnologies : styles.container_foottechnologies_NonePresentation}>
+                    <FootTechnologies/>
+                </div>
+                <div className={ presentation? styles.container_frontCard : styles.container_frontCard_NonePresentation}>
+                    <FrontCard/>
+                </div>
+            </section>
             {start ?
                 <>
-                    <section className={styles.container_about}>
+                    <section id='about' className={styles.container_about}>
                         <AboutComponent/>
                     </section>
-                    <section className={styles.container_proyects}>
+                    <section id='proyects' className={styles.container_proyects}>
                         <Proyects/>
                     </section>
-                    <section className={styles.container_technologies}>
+                    <section id='technologies' className={styles.container_technologies}>
                         <Technologies/>
                     </section>
-                    <section className={styles.container_contact}>
+                    <section id='contact' className={styles.container_contact}>
                         <Contact/>
                     </section>
                 </> :
