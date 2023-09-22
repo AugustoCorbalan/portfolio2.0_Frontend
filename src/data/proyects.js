@@ -72,9 +72,8 @@ const portfolio1={
 
 const portfolio2={
     title: "Portfolio 2.0",
-    description: `Mi portafolio, desarrollado con css modules SIN uso de librerías. Todas las animaciones e interactividad
-                    fue desarrollada con css puro, javascript y vectores SVG. En el cual intento mostrar mis habilidades en el
-                    manejo de estas tecnologías. 
+    description: `  Todas las animaciones e interactividad fue desarrollada con css puro, javascript y vectores SVG. En el cual intento mostrar mis habilidades en el
+                    manejo de estas tecnologías.
                     PD: Sigo desarrollando y actualizando este portafolio con más animaciones e interactividad. Para hacerlo cada vez más interesante.`,
     image: image_portfolio2,
     technologies: [

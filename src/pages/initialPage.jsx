@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { setStart, setPresentation } from '../Redux/actions';
-import styles from './initialPage.module.css';
 import { NavBar } from '../components/navBar/navBar';
 import { FrontCard } from '../components/sections/frontCard/frontCard';
 import { FootTechnologies } from '../components/footTechnologies/footTechnologies';
@@ -13,6 +12,8 @@ import { LoaderPage } from '../components/loader_page/loaderPage';
 import { InitialAnimation } from '../components/initial_animation/initialAnimation';
 import { Technologies } from '../components/sections/technologies/technologies';
 import { Contact } from '../components/sections/contact/contact';
+import styles from './initialPage.module.css';
+
 export const InitialPage = ()=>{
     const dispatch= useDispatch();
     const {start, presentation} = useSelector((state)=>state);

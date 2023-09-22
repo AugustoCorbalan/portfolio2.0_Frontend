@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import styles from './card.module.css';
 import { HalfHexagon } from '../../../../svg/half_hexagon';
+import icon_Link from '../../../../../assets/images/iconsLinks/link_icon.png';
+import icon_github from '../../../../../assets/images/iconsLinks/github.png';
 export const Card = ({ data })=>{
     const [ card_status, setStatus ] = useState( false );
 
@@ -61,7 +63,18 @@ export const Card = ({ data })=>{
                                 }
                             </div>
                             <div className={styles.container_links}>
-                                Links
+                                <a href="http://localhost:3000/">
+                                    <img src={icon_github} alt='Link de repositorio'/>
+                                    <p>Front-end</p>
+                                </a>
+                                <a href="http://localhost:3000/">
+                                    <img src={icon_github} alt='Link de repositorio'/>
+                                    <p>Back-end</p>
+                                </a>
+                                <a href={data.links.deploy}>
+                                    <img src={icon_Link} alt='Link del proyecto'/>
+                                    <p>Deploy</p>
+                                </a>
                             </div>
                         </div>
                         <div className={styles.container_image}>
