@@ -8,7 +8,7 @@ export const Card = ({ data })=>{
 
     const scroll_position =()=>{
         let verticalScroll = window.scrollY;
-        if(verticalScroll >= 1000 && verticalScroll < 2200 ){
+        if(verticalScroll >= 1000){
             setStatus(true)
         }
         else {

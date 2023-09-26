@@ -1,4 +1,3 @@
-import { Card } from './components/cards/card.jsx';
 import { CardsContainer } from './components/cards/cardsContainer.jsx';
 import styles from './proyects.module.css';
 export const Proyects = ()=>{
