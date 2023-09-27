@@ -6,7 +6,7 @@ import { myData } from '../../data/my_data.js';
 export const NavBar = ()=>{
 
     const [ sectionSelect, setSelect ] = useState("ppal");
-    console.log(sectionSelect)
+    
     return(
         <div className={styles.container}>  
             <div className={styles.subContainer1}>

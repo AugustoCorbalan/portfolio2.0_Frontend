@@ -17,10 +17,16 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-thumb:hover{
   background-color: #9a6210;
 }
+@media (min-width: 0px){
+  *{
+    font-size: 25px;
+    /* background-color: red; */
+  }
+}
 @media (min-width: 1300px){
   *{
     font-size: 16.6px;
-    /* background-color: red; */
+    background-color: red;
   }
 }
 @media (min-width: 1390px){

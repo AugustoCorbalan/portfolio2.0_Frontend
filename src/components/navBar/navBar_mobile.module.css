@@ -1,13 +1,31 @@
+.button_dropdown{
+    position: fixed;
+    right: 1.5em;
+    top: 1.5em;
+    width: 4em;
+    height: 4em;
+    border: none;
+    background-color: #1e1e1e;
+}
+.button_dropdown img{
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+}
 .container{
     display: flex;
+    position: fixed;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     position: fixed;
     font-size: 1rem;
-    top:0px;
-    width: 100%;
-    height: 2.5em;
+    top: 1em;
+    right: 6.5em;
+    width: auto;
+    height: auto;
     background-color: #1e1e1e;
+    padding: 1rem;
     box-shadow: 0px 10px 20px 0px #171717d5;
 }
 .subContainer1{
@@ -18,15 +36,16 @@
     height: 100%;
 }
 .subContainer2{
-    /* background-color: aqua; */
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     justify-content: space-between;
-    align-items: center;
-    width: 50%;
+    width: auto;
     height: 66%;
 }
 .subContainer3{
     display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 25%;
@@ -59,7 +78,7 @@
     background: none;
     border: none;
     font-family: 'Oswald', sans-serif;
-    font-size: 1em;
+    font-size: 2em;
     font-weight: 300;
     position: relative;
     text-decoration: none;
