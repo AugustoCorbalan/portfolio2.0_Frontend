@@ -122,3 +122,10 @@
         opacity: 1;
     }
 }
+@media (max-width: 450px) {
+    .plot1{
+        margin-right: -6.5em;
+        margin-bottom: 6.5vh;
+        scale: 1.5;
+    }
+}

@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { setStart, setPresentation } from '../Redux/actions';
 import { NavBar } from '../components/navBar/navBar';
-import { NavBar_mobile } from '../components/navBar/navBar_mobile';
 import { FrontCard } from '../components/sections/frontCard/frontCard';
 import { FootTechnologies } from '../components/footTechnologies/footTechnologies';
 import { FirstModal } from '../components/modals/firstModal';
@@ -18,17 +17,17 @@ import styles from './initialPage.module.css';
 
 export const InitialPage = ()=>{
     const dispatch= useDispatch();
-    const {start, presentation, display_portrait} = useSelector((state)=>state);
+    const {start, presentation} = useSelector((state)=>state);
     const [ buttonStatus, setButtonStatus ]  = useState(false);
     
-    //Seteo la relacion de aspecto del display 
-    useEffect(()=>{
-        if(window.innerHeight > window.innerWidth ){
-            dispatch(setDisplayPortrait(true));
-        }else{
-            dispatch(setDisplayPortrait(false));
-        }
-    },[window.innerHeight, window.innerWidth])
+    // //Seteo la relacion de aspecto del display 
+    // useEffect(()=>{
+    //     if(window.innerHeight > window.innerWidth ){
+    //         dispatch(setDisplayPortrait(true));
+    //     }else{
+    //         dispatch(setDisplayPortrait(false));
+    //     }
+    // },[window.innerHeight, window.innerWidth])
 
     useEffect(()=>{
         setTimeout(()=>{
@@ -60,9 +59,7 @@ export const InitialPage = ()=>{
             }
             { presentation ? <InitialAnimation/> : null }
             <div className={ presentation? styles.container_navBar : styles.container_navBar_NonePresentation}>
-                {
-                   display_portrait ? <NavBar_mobile/> : <NavBar/>
-                }
+                <NavBar/>
             </div>
             <section id='principal'>
                 <div className={ presentation? styles.container_foottechnologies : styles.container_foottechnologies_NonePresentation}>

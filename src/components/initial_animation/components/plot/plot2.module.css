@@ -12,6 +12,7 @@
     margin-right: -1.875em;
     margin-top: 10vh;
     width: 18.75em;
+    /* background-color: red; */
 }
 .plot2_secondary path{
     stroke: #6464642d;
@@ -71,5 +72,13 @@
 @keyframes render_principalLines {
     to{
         stroke: #f19e22;
+    }
+}
+
+@media (max-width: 450px) {
+    .plot2{
+        margin-right: -6.5em;
+        margin-top: 4em;
+        scale: 1.5;
     }
 }

@@ -37,8 +37,8 @@
 .text{
     display: flex;
     position: absolute;
-    width: 70px;
-    height: 140px;
+    width: 4em;
+    height: 9em;
     z-index: 5;
 }
 .text h1:nth-child(1){

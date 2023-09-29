@@ -1,18 +1,21 @@
+.container{
+    display: block;
+}
 .button_dropdown{
     position: fixed;
     right: 1.5em;
-    top: 1.5em;
+    top: 0.7em;
     width: 4em;
     height: 4em;
     border: none;
-    background-color: #1e1e1e;
+    background: none;
 }
 .button_dropdown img{
     width: 100%;
     height: 100%;
     color: #FFFFFF;
 }
-.container{
+.container_buttons{
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -20,13 +23,18 @@
     align-items: flex-start;
     position: fixed;
     font-size: 1rem;
-    top: 1em;
-    right: 6.5em;
+    top: 5.5em;
+    right: 0em;
     width: auto;
     height: auto;
     background-color: #1e1e1e;
-    padding: 1rem;
+    /* background-color: red; */
+    padding: 3.5rem 1.5rem 1.5rem 3rem;
     box-shadow: 0px 10px 20px 0px #171717d5;
+    /* border: 1px solid red; */
+    border-radius: 0px 0px 0px 5px;
+    z-index: 1;
+    /* animation: deployed 2s linear forwards; */
 }
 .subContainer1{
     display: flex;
@@ -113,4 +121,19 @@
 
   .linkSelect{
     color: #C78118 !important;
+  }
+
+  @keyframes deployed {
+    0%{
+        scale: 0;  
+    }
+    100%{
+        top: 5.5em;
+    }
+  }
+
+  @media (min-width: 450px){
+    .container{
+      display: none;
+    }
   }

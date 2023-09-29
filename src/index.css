@@ -19,43 +19,42 @@ body::-webkit-scrollbar-thumb:hover{
 }
 @media (min-width: 0px){
   *{
-    font-size: 25px;
-    /* background-color: red; */
+    font-size: 9px;
   }
 }
-@media (min-width: 1300px){
+@media (min-width: 450px){
   *{
-    font-size: 16.6px;
-    background-color: red;
+    font-size: 12px;
   }
 }
+@media (min-width: 1050px){
+  *{
+    font-size: 15px;
+  }
+}
+
 @media (min-width: 1390px){
   *{
     font-size: 17.6px;
-    /* background-color: red; */
   }
 }
 @media (min-width: 1500px){
   *{
     font-size: 19px;
-    /* background-color: red; */
   }
 }
 @media (min-width: 1580px){
   *{
     font-size: 20px;
-    /* background-color: red; */
   }
 }
 @media (min-width: 1890px){
   *{
     font-size: 24px;
-    /* background-color: red; */
   }
 }
 @media (min-width: 2100px){
   *{
     font-size: 27px;
-    /* background-color: red; */
   }
 }
