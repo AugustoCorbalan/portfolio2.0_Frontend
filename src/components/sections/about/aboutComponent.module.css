@@ -27,6 +27,9 @@
     height: 100%;
 }
 .container_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 1.25em;
     width: 100%;
     height: 80%;
@@ -39,7 +42,7 @@
     font-weight: 200;
     font-size: 1.05rem;
     letter-spacing: 0.089em;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 

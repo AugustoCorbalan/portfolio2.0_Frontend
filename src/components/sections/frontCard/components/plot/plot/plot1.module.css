@@ -31,7 +31,6 @@
     /* animation: render_lines 2s linear forwards 15s; */
 }
 .plot1_traceLine path{
-    stroke: #f19e22;
     stroke: #f19e2299;
     stroke-width: 0.3125em;
     fill: transparent;
@@ -122,10 +121,10 @@
         opacity: 1;
     }
 }
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
     .plot1{
         margin-right: -6.5em;
         margin-bottom: 6.5vh;
         scale: 1.5;
     }
-}
+} */

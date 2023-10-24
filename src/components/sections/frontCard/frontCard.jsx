@@ -36,7 +36,7 @@ export const FrontCard = ()=>{
             <Plot/>
             <div className={styles.subContainer}>
                 <div className={styles.title}>
-                    <h1>CORBALAN AUGUSTO N.</h1>
+                    <h1>CORBALAN AUGUSTO</h1>
                     <h2>{`< Full Stack Web Developer />`}</h2>
                 </div>
                 <div className={styles.dynamicText}>

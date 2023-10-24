@@ -8,7 +8,7 @@
     width: 87.5%;
     height: 100%;
     position: absolute;
-    perspective: 100000px; /*Que es esto*/
+    perspective: 100000px; /* Que es esto */
     font-size: 1rem;
 }
 .carrusel{

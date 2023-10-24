@@ -1,28 +1,28 @@
 
-.plot1{
-    /* background-color: rgba(127, 255, 212, 0.348); */
+.plot3{
+    /* background-color: red; */
     left: 0px;
-    margin-left: -13.937em;
+    margin-left: 11.75em;
     margin-bottom: 10vh;
     width: 32em;
     font-size: 1rem;
 }
-.plot1_principal path{
+.plot3_principal path{
     position: relative;
     stroke: #64646449;
     stroke-width: 0.312em;
     fill: transparent;
     opacity: 0;
-    animation: render 0.1s linear forwards 8.3s, render_principalLines 0.1s linear forwards 10.9s;
+    animation: render 0.1s linear forwards, render_principalLines 0.1s linear forwards;
 }
-.plot1_secondary path{
+.plot3_secondary path{
     stroke: #6464642d;
     stroke-width: 0.125em;
     fill: transparent;
     opacity: 0;
-    animation: render 0.1s linear forwards 8.3s, render_secondaryLines 0.1s linear forwards 10.9s;
+    animation: render 0.1s linear forwards, render_secondaryLines 0.1s linear forwards;
 }
-.plot1_line path{
+.plot3_line path{
     stroke: #f19e2299;
     stroke-width: 0.3125em;
     fill: transparent;
@@ -30,24 +30,24 @@
     stroke-dashoffset: 345;
     /* animation: render_lines 2s linear forwards 15s; */
 }
-.plot1_traceLine path{
-    stroke: #f19e22;
+.plot3_traceLine path{
     stroke: #f19e2299;
+    stroke: #f19e22;
     stroke-width: 0.3125em;
     fill: transparent;
     stroke-dasharray: 20;
     stroke-dashoffset: 5;
     opacity: 0;
-    animation: render 0.1s linear forwards 8.3s;
+    animation: render 0.1s linear forwards;
 }
 /*-------------- Renderizados independientes -------------- */
-.path888{
+/* .path888{
     stroke: #1e1e1e;
     fill: transparent;
     stroke-width: 0.625em;
     stroke-dasharray: 760;
     stroke-dashoffset: 0;
-    animation: render_path888 0.7s ease-in forwards 9.7s;
+    animation: render_path888 0.7s ease-in forwards;
 }
 .path878{
     stroke: #1e1e1e;
@@ -64,7 +64,7 @@
     stroke-dasharray: 630;
     stroke-dashoffset: 0;
     animation: render_path878 0.1s linear forwards 10.4s;
-}
+} */
 
 
 /* -------------------------------------------------------------------------- */
@@ -122,11 +122,13 @@
         opacity: 1;
     }
 }
-
-/* @media (max-width: 450px) {
-    .plot1{
-        margin-right: -6.5em;
-        margin-bottom: 6.5vh;
-        scale: 1.5;
+@media (min-width: 450px) {
+    .plot3{
+        display: none;
     }
-} */
+}
+@media (max-width: 450px) {
+    .plot3{
+        transform: rotateY(180deg);
+    }
+}
