@@ -48,24 +48,31 @@ export const Technologies =()=>{
                             <div className={styles.container_icons}>
                                 <div className={styles.icon}>
                                     <img src={html} alt="icon html" />
+                                    <p>Html</p>
                                 </div>
                                 <div className={styles.icon}>
                                     <img src={css} alt="icon css" />
+                                    <p>Css</p>
                                 </div>
                                 <div className={styles.icon}>
                                     <img src={js} alt="icon js" />
+                                    <p>JS</p>
                                 </div>
                                 <div className={styles.icon}>
                                     <img src={materialUi} alt="icon materialUi" />
+                                    <p>Material-UI</p>
                                 </div>
                                 <div className={styles.icon}>
                                     <img src={react} alt="icon react" />
+                                    <p>React</p>
                                 </div>
                                 <div className={styles.icon}>
                                     <img src={redux} alt="icon redux" />
+                                    <p>Redux</p>
                                 </div>
                                 <div className={styles.icon}>
                                     <img src={nextJs} alt="icon nextJs" />
+                                    <p>Next</p>
                                 </div>
                             </div>
                         </div>
@@ -77,16 +84,20 @@ export const Technologies =()=>{
                             </div>
                             <div className={styles.container_icons}>
                                 <div className={styles.icon}>
-                                    <img src={nodeJs} alt="icon react" />
+                                    <img src={nodeJs} alt="icon nodeJS" />
+                                    <p>NodeJS</p>
                                 </div>
                                 <div className={styles.icon}>
                                     <img src={docker} alt="icon docker" />
+                                    <p>Docker</p>
                                 </div>
                                 <div className={styles.icon}>
                                     <img src={express} alt="icon express" />
+                                    <p>Express</p>
                                 </div>
                                 <div className={styles.icon}>
                                     <img src={sequelize} alt="icon sequelize" />
+                                    <p>Sequelize</p>
                                 </div>
                             </div>
                         </div>
@@ -99,10 +110,12 @@ export const Technologies =()=>{
                             <div className={styles.container_icons}>
                                 <div className={styles.icon}>
                                     <img src={mongodb} alt="icon mongodb" />
+                                    <p>MongoDB</p>
                                 </div>
                                 <div className={styles.container_icons}>
                                     <div className={styles.icon}>
                                         <img src={postgreSql} alt="icon postgreSql" />
+                                        <p>PostgreSQL</p>
                                     </div>
                                 </div>
                             </div>
