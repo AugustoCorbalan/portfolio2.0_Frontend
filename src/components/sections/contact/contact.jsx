@@ -4,14 +4,11 @@ import { myData } from '../../../data/my_data.js';
 export const Contact = ()=>{
     return (
         <div className={styles.contact_container}> 
-            {/* <div className={styles.title_container}>
-                <h2>Contactemos:</h2>
-            </div> */}
             <div className={styles.links_container}>
                 {
                     myData.contact.map((el)=>{
                         return(
-                            <a href={el.link} className={styles.container_icon}>
+                            <a href={el.link} className={styles.container_icon} target='_blank' >
                                 <img src={el.icon} alt={`icono de ${el.name}`}/>
                             </a>
                         )

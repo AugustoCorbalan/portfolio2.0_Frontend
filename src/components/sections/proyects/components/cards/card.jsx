@@ -63,18 +63,34 @@ export const Card = ({ data })=>{
                                 }
                             </div>
                             <div className={styles.container_links}>
-                                <a href="" target='_blank'>
-                                    <img src={icon_github} alt='Link de repositorio'/>
-                                    <p>Front-end</p>
-                                </a>
-                                <a href="" target='_blank'>
-                                    <img src={icon_github} alt='Link de repositorio'/>
-                                    <p>Back-end</p>
-                                </a>
-                                <a href={data.links.deploy} target='_blank'>
-                                    <img src={icon_Link} alt='Link del proyecto'/>
-                                    <p>Deploy</p>
-                                </a>
+                                {
+                                    <>
+                                        {
+                                           data.links.repository.frontend ?
+                                                <a href={data.links.repository.frontend} target='_blank'>
+                                                    <img src={icon_github} alt='Link de repositorio'/>
+                                                    <p>Front-end</p>
+                                                </a> :
+                                                null
+                                        }
+                                        {
+                                            data.links.repository.backend ?
+                                                <a href={data.links.repository.backend} target='_blank'>
+                                                    <img src={icon_github} alt='Link de repositorio'/>
+                                                    <p>Back-end</p>
+                                                </a> :
+                                                null
+                                        }
+                                        {
+                                            data.links.deploy?
+                                                <a href={data.links.deploy} target='_blank'>
+                                                    <img src={icon_Link} alt='Link del proyecto'/>
+                                                    <p>Deploy</p>
+                                                </a> :
+                                                null
+                                        }
+                                    </>
+                                }
                             </div>
                         </div>
                         <div className={styles.container_image}>

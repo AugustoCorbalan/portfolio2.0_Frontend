@@ -28,7 +28,10 @@ const recipes={
         {name: "PostgreSql", icon: postgreSQL }
     ],
     links: {
-        repository: "",
+        repository: {
+            frontend:"https://github.com/AugustoCorbalan/PI-Henry-2/tree/main/client",
+            backend: "https://github.com/AugustoCorbalan/PI-Henry-2/tree/main/api"
+        },
         deploy: "https://pi-henry-2.vercel.app"
     },
     image: recipesImage
@@ -48,7 +51,10 @@ const codeCuak={
         {name: "PostgreSql", icon: postgreSQL} 
     ],
     links: {
-        repository: "",
+        repository:{
+            frontend: "https://github.com/SeroTomas/FrontEnd/tree/main/codecuakfront",
+            backend: ""
+        },
         deploy: "https://front-end-six-black.vercel.app"
     }
 }
@@ -65,7 +71,10 @@ const portfolio1={
         { name: css, icon: css }
     ],
     links: {
-        repository: "",
+        repository:{
+            frontend: "https://github.com/AugustoCorbalan/Portfolio/tree/main/client",
+            backend: "https://github.com/AugustoCorbalan/Portfolio/tree/main/api"
+        },
         deploy: "https://portfolio-liard-mu-69.vercel.app/"
     }
 }
@@ -82,7 +91,9 @@ const portfolio2={
         { name: css, icon: css }
     ],
     links: {
-        repository: "",
+        repository: {
+            frontend: "https://github.com/AugustoCorbalan/portfolio2.0_Frontend"
+        },
         deploy: "https://portfolio2-0-drab.vercel.app/"
     }
 }
