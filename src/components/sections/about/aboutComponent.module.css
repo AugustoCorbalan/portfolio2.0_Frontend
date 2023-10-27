@@ -89,7 +89,7 @@
     transform: scaleX(1.5) rotateZ(180deg);
   }
 
-  .decoration{
+  .container_decoration{
     display: flex;
     justify-content: space-between;
     width: 31.2em;
@@ -247,15 +247,14 @@
       height: 80em;
     }
       .container_description{
-        width: 100%;
-        height: 45%;
+        width: 90%;
+        height: 50%;
+        margin-top: 1em;
+        box-shadow: 1.25em 1.25em 1.25em -0.937em rgba(0, 0, 0, 0.575);
         /* background-color: violet; */
       }
       .container_decoration{
-        display: flex;
-        align-items: center;
-        /* background-color: red; */
-        height: 45%;
+        margin-top: 5em;
       }
       .container_text p{
         font-size: 1.3em;
