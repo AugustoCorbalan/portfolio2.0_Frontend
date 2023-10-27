@@ -1,10 +1,16 @@
 .container{
-    display: block;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.8em 0 0.8em;
+    height: 6em;
+    width: 100%;
+    /* background-color: aquamarine; */
 }
 .button_dropdown{
-    position: fixed;
-    right: 1.5em;
-    top: 0.7em;
+    /* right: 1.5em;
+    top: 0.7em; */
     width: 4em;
     height: 4em;
     border: none;
@@ -121,6 +127,18 @@
 
   .linkSelect{
     color: #C78118 !important;
+  }
+
+  .container_cv{
+    height: 100%;
+    /* background-color: red; */
+  }
+  .container_cv img{
+    width: 3em;
+  }
+  .container_cv h2{
+    font-size: 2em;
+    font-weight: 300;
   }
 
   @keyframes deployed {

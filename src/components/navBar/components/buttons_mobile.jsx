@@ -10,6 +10,10 @@ export const Buttons_mobile = ()=>{
 
     return(
         <div className={styles.container}>
+            <a href={myData.CV.link} className={styles.container_cv}>
+                    <img src={myData.CV.icon} alt={myData.CV.name} />
+                    <h2>Curriculum</h2>
+            </a>
             <button className={styles.button_dropdown} onClick={()=>setOpen(!open)}>
                 <img src={icon_menu}/>
             </button>

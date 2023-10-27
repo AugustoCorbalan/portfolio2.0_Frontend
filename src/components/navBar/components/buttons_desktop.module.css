@@ -54,6 +54,8 @@
 .container_cv img{
     height: 50%;
     margin: 0.125em;
+    color: #FFFFFF;
+    stroke: white;
 }
 .subContainer2 a{
     background: none;
