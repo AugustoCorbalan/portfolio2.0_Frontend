@@ -10,7 +10,7 @@ export const AboutComponent=()=>{
 
     const scroll_position =()=>{
         let verticalScroll = window.scrollY;
-        if(verticalScroll >= 400 && verticalScroll < 900 ){
+        if(verticalScroll >= 400){
             setDecoration(true)
         }
         else {
@@ -48,14 +48,16 @@ export const AboutComponent=()=>{
                 </div>
             </div>
             <div className={styles.container_decoration}>
-                <div className={decoration_status? styles.container_hexagon1_open : styles.container_hexagon1_close}>
-                    <HalfHexagon/>
-                </div>
-                <div className={ decoration_status? styles.container_phrase_open : styles.container_phrase_close}>
-                    <p>My mind does not stop <br/> searching for solutions, <br/>the code is my new best ally...</p>
-                </div>
-                <div className={decoration_status? styles.container_hexagon2_open : styles.container_hexagon2_close}>
-                    <HalfHexagon/>
+                <div className={styles.decoration}>
+                    <div className={decoration_status? styles.container_hexagon1_open : styles.container_hexagon1_close}>
+                        <HalfHexagon/>
+                    </div>
+                    <div className={ decoration_status? styles.container_phrase_open : styles.container_phrase_close}>
+                        <p>My mind does not stop <br/> searching for solutions, <br/>the code is my new best ally...</p>
+                    </div>
+                    <div className={decoration_status? styles.container_hexagon2_open : styles.container_hexagon2_close}>
+                        <HalfHexagon/>
+                    </div>
                 </div>
             </div>
         </div>

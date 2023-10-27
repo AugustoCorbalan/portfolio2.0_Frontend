@@ -34,7 +34,6 @@
     width: 100%;
     height: 80%;
     padding-right: 2.5%;
-    /* background-color:yellowgreen; */
 }
 .container_text p{
     color: #FFFFFF;
@@ -90,7 +89,7 @@
     transform: scaleX(1.5) rotateZ(180deg);
   }
 
-  .container_decoration{
+  .decoration{
     display: flex;
     justify-content: space-between;
     width: 31.2em;
@@ -238,4 +237,30 @@
       right: 10%;
       scale: 1;
     } 
+   }
+   @media (max-width: 450px){
+    .container{
+      display: flex;
+      flex-direction: column;
+      /* justify-content: space-between; */
+      /* background-color: red; */
+      height: 80em;
+    }
+      .container_description{
+        width: 100%;
+        height: 45%;
+        /* background-color: violet; */
+      }
+      .container_decoration{
+        display: flex;
+        align-items: center;
+        /* background-color: red; */
+        height: 45%;
+      }
+      .container_text p{
+        font-size: 1.3em;
+      }
+      .button{
+        font-size: 1.3em;
+      }
    }
