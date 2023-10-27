@@ -239,3 +239,21 @@
       scale: 0.1;
     }
   }
+
+  @media (max-width: 450px) {
+    .container_content{
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+    .container_left{
+      margin-top: 5em;
+      width: 100%;
+      height: auto;
+      align-items: center;
+    }
+    .container_decoration{
+      margin-top: 10em;
+      margin-bottom: 10em;
+    }
+  }
