@@ -25,6 +25,7 @@
     /* background-color: blueviolet; */
     width: 50%;
     height: 100%;
+    box-shadow: 1.25em 1.25em 1.25em -0.937em rgba(0, 0, 0, 0.575);
 }
 .container_text{
     display: flex;
