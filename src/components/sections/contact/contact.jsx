@@ -15,6 +15,9 @@ export const Contact = ()=>{
                     })
                 }
             </div>
+            <div className={styles.copyright}>
+                <p>© 2023 designed and produced by Augusto Nicolás Corbalán</p>
+            </div>
         </div>
     )
 }
