@@ -6,19 +6,26 @@ import icon_github from '../../../../../assets/images/iconsLinks/github.png';
 export const Card = ({ data })=>{
     const [ card_status, setStatus ] = useState( false );
 
-    const scroll_position =()=>{
-        let verticalScroll = window.scrollY;
-        if(verticalScroll >= 1000){
+    const handle_decoration =()=>{
+        // Almaceno en constantes los datos de posicion del elemento "about" y la altura de la vntana grafica.
+        const element = document.querySelector("#container_card");
+        const elementInfo = element.getBoundingClientRect();
+        const elementHeigth = elementInfo.height; //Altura de todo el elemento "about"
+        const topDistance = elementInfo.top; //Distancia desde borde superior del elemento about hasta borde superior de ventana gráfica
+        const windowsHeight = window.innerHeight; // Altura de la ventana gráfica.
+        //Calculo el punto crítico en donde quiero que se ejecute la acción. (Cuando se este visibilizando por lo menos la mitad del elemento "about")
+        const criticalPoint = windowsHeight - (elementHeigth*(3/4))
+        if(topDistance <= criticalPoint){
             setStatus(true)
         }
         else {
             setStatus(false)
         }
     }
-    window.addEventListener("scroll", scroll_position);
+    window.addEventListener("scroll", handle_decoration);
     
     return(
-        <div className={styles.container_card}>
+        <div id="container_card" className={styles.container_card}>
             <div className={styles.container_decoration}>
                 <div className={ card_status? styles.container_hexagon1_open : styles.container_hexagon1_close}>
                     <HalfHexagon/>

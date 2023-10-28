@@ -8,16 +8,23 @@ export const AboutComponent=()=>{
     const [page, setPage] = useState(1);
     const [ decoration_status, setDecoration ] = useState(false);
 
-    const scroll_position =()=>{
-        let verticalScroll = window.scrollY;
-        if(verticalScroll >= 400){
+    const handle_decoration =()=>{
+        // Almaceno en constantes los datos de posicion del elemento "about" y la altura de la vntana grafica.
+        const element = document.querySelector("#container_animation_about");
+        const elementInfo = element.getBoundingClientRect();
+        const elementHeigth = elementInfo.height; //Altura de todo el elemento "about"
+        const topDistance = elementInfo.top; //Distancia desde borde superior del elemento about hasta borde superior de ventana gráfica
+        const windowsHeight = window.innerHeight; // Altura de la ventana gráfica.
+        //Calculo el punto crítico en donde quiero que se ejecute la acción. (Cuando se este visibilizando por lo menos la mitad del elemento "about")
+        const criticalPoint = windowsHeight - (elementHeigth*(3/4))
+        if(topDistance <= criticalPoint){
             setDecoration(true)
         }
         else {
             setDecoration(false)
         }
     }
-    window.addEventListener("scroll", scroll_position);
+    window.addEventListener("scroll", handle_decoration);
 
     return(
         <div className={styles.container}>
@@ -47,7 +54,7 @@ export const AboutComponent=()=>{
                     }
                 </div>
             </div>
-            <div className={styles.container_decoration}>   
+            <div id="container_animation_about" className={styles.container_decoration}>   
                 <div className={decoration_status? styles.container_hexagon1_open : styles.container_hexagon1_close}>
                     <HalfHexagon/>
                 </div>
