@@ -12,6 +12,7 @@ import recipesImage from '../assets/images/proyects/backgroundRecipes.jpg';
 import image_codeCuak from '../assets/images/proyects/backgroundcodeCuak.jpg';
 import image_portfolio1 from '../assets/images/proyects/backgroundPortfolio1.jpg';
 import image_portfolio2 from '../assets/images/proyects/backgroundPortfolio2.jpg';
+import image_ecommerce from '../assets/images/proyects/backgroundEcommerce.jpg';
 // import sequelize from '../assets/images/iconsTechnologies/'; 
 
 const recipes={
@@ -68,7 +69,7 @@ const portfolio1={
     technologies: [
         { name: "nextJs", icon: nextJs },
         { name: "react", icon: react },
-        { name: css, icon: css }
+        { name: "css", icon: css }
     ],
     links: {
         repository:{
@@ -88,7 +89,7 @@ const portfolio2={
     technologies: [
         { name: "react", icon: react },
         { name: "redux", icon: redux },
-        { name: css, icon: css }
+        { name: "css", icon: css }
     ],
     links: {
         repository: {
@@ -98,4 +99,27 @@ const portfolio2={
     }
 }
 
-export const proyects = [ recipes, codeCuak, portfolio1, portfolio2 ]
+const ecommerce={
+    title: "e-commerce",
+    description: `Proyecto realizado de forma individual, el cual me permitio solidificar mis conococimientos
+                  en el stack PERN, y en las librerías GoogleAuth para la autenticación de los usuarios y
+                  Mercado Pago para la pasarella de pago.`,
+    image: image_ecommerce,
+    technologies: [
+        { name: "react", icon: react },
+        { name: "redux", icon: redux },
+        { name: "css", icon: css },
+        { name: "NodeJs", icon: nodeJs},
+        {name: "Sequelize", icon: sequelize},
+        {name: "PostgreSql", icon: postgreSQL} 
+    ],
+    links: {
+        repository: {
+            frontend: "https://github.com/AugustoCorbalan/e-commerce_frontend",
+            backend: "https://github.com/AugustoCorbalan/e-commerce_backend"
+        },
+        deploy: "https://e-commerce-frontend-zeta.vercel.app/"
+    }
+}
+
+export const proyects = [ecommerce, codeCuak, recipes, portfolio2, portfolio1 ]
