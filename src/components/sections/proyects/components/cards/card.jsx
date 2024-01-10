@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './card.module.css';
 import { HalfHexagon } from '../../../../svg/half_hexagon';
 import icon_Link from '../../../../../assets/images/iconsLinks/link_icon.png';
 import icon_github from '../../../../../assets/images/iconsLinks/github.png';
-export const Card = ({ data })=>{
-    const [ card_status, setStatus ] = useState( false );
+export const Card = ({ data, display })=>{
+    const [ cardStatus, setCardStatus ] = useState( false );
 
     const handle_decoration =()=>{
         // Almaceno en constantes los datos de posicion del elemento "about" y la altura de la vntana grafica.
@@ -16,10 +16,10 @@ export const Card = ({ data })=>{
         //Calculo el punto crítico en donde quiero que se ejecute la acción. (Cuando se este visibilizando por lo menos la mitad del elemento "about")
         const criticalPoint = windowsHeight - (elementHeigth*(3/4))
         if(topDistance <= criticalPoint){
-            setStatus(true)
+            setCardStatus(true)
         }
         else {
-            setStatus(false)
+            setCardStatus(false)
         }
     }
     window.addEventListener("scroll", handle_decoration);
@@ -27,14 +27,14 @@ export const Card = ({ data })=>{
     return(
         <div id="container_card" className={styles.container_card}>
             <div className={styles.container_decoration}>
-                <div className={ card_status? styles.container_hexagon1_open : styles.container_hexagon1_close}>
+                <div className={ (cardStatus || display) ? styles.container_hexagon1_open : styles.container_hexagon1_close}>
                     <HalfHexagon/>
                 </div>
-                <div className={ card_status? styles.container_hexagon2_open : styles.container_hexagon2_close }>
+                <div className={ (cardStatus || display)? styles.container_hexagon2_open : styles.container_hexagon2_close }>
                     <HalfHexagon/>
                 </div>
             </div>
-            <div className={ card_status? styles.container_proyectData_open : styles.container_proyectData_close}>
+            <div className={ (cardStatus || display)? styles.container_proyectData_open : styles.container_proyectData_close}>
                 <div className={styles.container_1}>
                     {
                         data.title.split(" ").map((word)=>{
