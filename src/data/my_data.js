@@ -8,5 +8,5 @@ export const myData = {
         {name:"gitHub", icon:github_icon, link:"https://github.com/AugustoCorbalan"},
         {name:"mail", icon:gmail_icon, link:"mailto:corbalan.augusto.n@gmail.com"},
     ],
-    CV: {name:"curriculum vitae", icon:google_docs, link:"https://drive.google.com/file/d/1YvsBJRnoUGItfQubDGLZJzzdiJAX3i0c/view?usp=drive_link"}
+    CV: {name:"curriculum vitae", icon:google_docs, link:"https://drive.google.com/file/d/1oOQzeNVVLhhQURc6u06V_yj02C2QwgCI/view"}
 }
